@@ -149,9 +149,9 @@
   display: flex;
   padding: 0;
   position: absolute;
-  align-self: auto;
+  align-self: center;
   box-sizing: border-box;
-  align-items: flex-start;
+  align-items: center;
   flex-shrink: 1;
   border-color: transparent;
   border-style: none;
@@ -160,7 +160,7 @@
   border-radius: 0px 0px 0px 0px;
   margin-bottom: 0;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   background-color: transparent;
 }
 .noahcuadradocomhomepage1-frame7 {
@@ -1079,6 +1079,7 @@
     left: 0px;
     right: 0px;
     margin: auto;
+    
   }
   .noahcuadradocomhomepage1-mydesigns {
     top: 1500px;
@@ -1176,4 +1177,20 @@
     right: 0px;
     margin: auto;
   }
+}
+@media(max-width: 3000px){
+  .noahcuadradocomhomepage1-mygames {
+    left: 0px;
+    right: 0px;
+    width: 1132px;
+    height: 625px;
+    margin: auto;
+    align-self: center;
+  }
+  .noahcuadradocomhomepage1-mydesigns {
+    left: 0px;
+    right: 0px;
+    margin: auto;
+  }
+
 }
