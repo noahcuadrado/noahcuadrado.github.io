@@ -21,18 +21,24 @@
   --dl-color-success-500: #32A94C;
   --dl-color-success-700: #4CC366;
   --dl-size-size-xxlarge: 288px;
+  --dl-color-default-text: rgba(23, 26, 33, 1);
   --dl-size-size-maxwidth: 1400px;
+  --dl-color-default-error: rgba(241, 81, 86, 1);
   --dl-radius-radius-round: 50%;
   --dl-space-space-halfunit: 8px;
   --dl-space-space-sixunits: 96px;
   --dl-space-space-twounits: 32px;
+  --dl-color-default-correct: rgba(14, 173, 105, 1);
   --dl-radius-radius-radius2: 2px;
   --dl-radius-radius-radius4: 4px;
   --dl-radius-radius-radius8: 8px;
   --dl-space-space-fiveunits: 80px;
   --dl-space-space-fourunits: 64px;
   --dl-space-space-threeunits: 48px;
+  --dl-color-default-errortext: rgba(165, 64, 45, 1);
+  --dl-color-default-textinput: rgba(23, 26, 33, 0.6000000238418579);
   --dl-space-space-oneandhalfunits: 24px;
+  --dl-color-default-textinputerror: rgba(241, 81, 86, 0.699999988079071);
 }
 .button {
   color: var(--dl-color-gray-black);
@@ -76,18 +82,18 @@
   display: flex !important;
   transform: none !important;
 }
-.Content {
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 400;
-  line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
-}
 .Heading {
   font-size: 32px;
   font-family: Inter;
   font-weight: 700;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.Content {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
   line-height: 1.15;
   text-transform: none;
   text-decoration: none;
