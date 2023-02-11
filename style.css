@@ -1,3 +1,74 @@
+.theme_selector{
+  position:fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: inherit;
+}
+.theme_selector .vertical_center{
+  position:fixed;
+  top:50%;
+  left:0;
+  width: 100vw;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.theme_selector .column{
+  width: 49%;
+  display: inline-block;
+}
+.theme_selector .flex{
+  display:flex;
+  width: 100%;
+}
+.theme_selector .button{
+  color:black;
+  /*background-color: white;*/
+  border: 0px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.theme_selector .column-1 .flex{
+  flex-direction: row-reverse;
+  margin-right: 3em;
+}
+.theme_selector .column-1 .button.light{
+  background-color: inherit;
+  mix-blend-mode: difference;
+}
+.theme_selector .column-1 .button.light:hover{
+  color: white;
+  background-color: black;
+  box-shadow: 5px 5px 0px #B9B9B9;
+}
+.theme_selector .column-2 .button.dark{
+  margin-left: 3em;
+}
+.theme_selector .column-2 .button.dark:hover{
+  color: black;
+  background-color: white;
+  box-shadow: 5px 5px 0px #B9B9B9;
+}
+@font-face {
+  font-family: "AtkinsonHyperlegible-Bold";
+  src: url("./fonts/AtkinsonHyperlegible-Bold.ttf") format("truetype");
+}
+body{
+  background-color: white;
+  font-family: "AtkinsonHyperlegible-Bold";
+}
+body.dark{
+  background-color: black;
+}
+.lightcolor{
+  color:white!important;
+}
+
+
+
+
 :root {
   --dl-color-gray-500: #595959;
   --dl-color-gray-700: #999999;
