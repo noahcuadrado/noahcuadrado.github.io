@@ -136,7 +136,7 @@
     <script type="text/javascript" src="index.js"></script>
   </head>
   <body>
-    <div style="display:none;">
+    <div id="main_page" class="d-none">
       <div class="noahcuadradocomhomepage1-container">
         <div class="noahcuadradocomhomepage1-noahcuadradocomhomepage1">
           <div class="noahcuadradocomhomepage1-topbar">
@@ -513,16 +513,16 @@
         </div>
       </div>
     </div>
-    <div class="theme_selector">
+    <div id="theme_selector" class="theme_selector">
       <div class="vertical_center">
         <div class="column column-1">
           <div class="flex">
-            <button id="light-button" class="button light">light.</button>
+            <button id="light-button" class="button light" onclick="themSelected('light')">light.</button>
           </div>
         </div>
         <div class="column column-2">
           <div class="flex">
-            <button class="button dark" onmouseover="changeBackground()" onmouseout="changeBackground()">dark.</button>
+            <button class="button dark" onmouseover="changeBackground()" onmouseout="changeBackground()" onclick="themSelected('dark')">dark.</button>
           </div>
         </div>
       </div>
