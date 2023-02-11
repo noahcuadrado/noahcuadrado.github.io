@@ -1,3 +1,4 @@
+/*esto hace que el div con clase theme_selector se ponga con posicion fija y que ocupe toda la pantalla, estilo modal para luego poder mostrarla en cualquier momento */
 .theme_selector{
   position:fixed;
   width: 100vw;
@@ -5,7 +6,9 @@
   left: 0;
   top: 0;
   background-color: inherit;
+  z-index: 10;
 }
+/*esto alinea los botones en el centro de la pantalla (vertical)*/
 .theme_selector .vertical_center{
   position:fixed;
   top:50%;
@@ -14,69 +17,80 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+/*puse dos columnas, una para cada boton y cada una ocupa la mitad de la pantalla*/
 .theme_selector .column{
   width: 49%;
   display: inline-block;
 }
+/*pongo el display flex para poder hacer que el primer boton se ponga al final de la columna (centrado horizontal)*/
 .theme_selector .flex{
   display:flex;
   width: 100%;
 }
+/*estilo de los botones base*/
 .theme_selector .button{
   color:black;
-  /*background-color: white;*/
   border: 0px;
   font-size: 50px;
   font-weight: bold;
 }
-
+/*hace que el boton de light este a la derecha (centrado horizontal)*/
 .theme_selector .column-1 .flex{
   flex-direction: row-reverse;
   margin-right: 3em;
 }
+/*intento de hacer que el color de texto del boton light cambiara automaticamente a blanco o negro basado en el background, no funciono*/
 .theme_selector .column-1 .button.light{
   background-color: inherit;
   mix-blend-mode: difference;
-  transition: background-color 350ms;
+  transition: background-color 350ms; /*pequeño delay en el cambio de color de background por que mas bonito*/
 }
+/*css para cuando pongo el mouse encima del boton*/
 .theme_selector .column-1 .button.light:hover{
   color: white;
   background-color: black;
   box-shadow: 5px 5px 0px #B9B9B9;
   transition: background-color 350ms;
 }
+/*margen al boton de dark para que no este pegado al otro*/
 .theme_selector .column-2 .button.dark{
   margin-left: 3em;
 }
+/*estilo para cuando pongo el mouse encima del boton dark*/
 .theme_selector .column-2 .button.dark:hover{
   color: black;
   background-color: white;
   box-shadow: 5px 5px 0px #B9B9B9;
   transition: background-color 350ms;
 }
+/*font de la pagina*/
 @font-face {
   font-family: "AtkinsonHyperlegible-Bold";
   src: url("./fonts/AtkinsonHyperlegible-Bold.ttf") format("truetype");
 }
+/*estilo default del body, deberia estar al principio de todo*/
 body{
   background-color: white;
   font-family: "AtkinsonHyperlegible-Bold";
   transition: background-color 250ms;
 }
+/*estilo para el tema oscuro, todos los estilos que usara el tema oscuro deberian iniciar con "body.dark", ej: "body.dark container{ background-color: black }" */
 body.dark{
   background-color: black;
   transition: background-color 250ms;
 }
+/*fuerzo que el boton de light siempre tenga el color de texto blanco*/
 .lightcolor{
   color:white!important;
 }
+/*estilo temporal, cuando se ponga boostrap ya incluye esta clase*/
 .d-none{
   display:none;
 }
 
 
 
-
+/*AQUI SE EMPIEZA A BORRAR O LO QUE QUIERAS*/
 :root {
   --dl-color-gray-500: #595959;
   --dl-color-gray-700: #999999;
