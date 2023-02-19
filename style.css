@@ -37,13 +37,13 @@
 .theme_selector .column-1 .button.light{
   background-color: inherit;
   mix-blend-mode: difference;
-  transition: background-color 350ms;
+  transition: background-color 600ms;
 }
 .theme_selector .column-1 .button.light:hover{
   color: white;
   background-color: black;
   box-shadow: 5px 5px 0px #B9B9B9;
-  transition: background-color 350ms;
+  transition: background-color 600ms;
 }
 .theme_selector .column-2 .button.dark{
   margin-left: 3em;
@@ -61,11 +61,11 @@
 body{
   background-color: white;
   font-family: "AtkinsonHyperlegible-Bold";
-  transition: background-color 250ms;
+  transition: background-color 800ms;
 }
 body.dark{
   background-color: black;
-  transition: background-color 250ms;
+  transition: background-color 800ms;
 }
 .lightcolor{
   color:white!important;
