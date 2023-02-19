@@ -3,7 +3,7 @@
 }
 .noahcuadradocomhomepage1-noahcuadradocomhomepage1 {
   width: 100%;
-  height: 2759px;
+  height: 2180px;
   display: flex;
   overflow: hidden;
   position: relative;
@@ -11,7 +11,7 @@
   flex-shrink: 0;
   border-color: transparent;
   justify-content: center;
-  background-color: rgba(61, 61, 61, 1);
+  background-color: rgb(0, 0, 0);
 }
 .noahcuadradocomhomepage1-topbar {
   top: 0px;
@@ -25,7 +25,7 @@
   flex-shrink: 0;
   border-color: transparent;
   justify-content: center;
-  background-color: rgba(79, 79, 79, 1);
+  background-color: rgba(23, 23, 23, 1)
 }
 .noahcuadradocomhomepage1-text {
   color: rgba(255, 255, 255, 1);
@@ -34,8 +34,8 @@
   align-self: auto;
   font-style: Regular;
   text-align: left;
-  font-family: Bebas Neue;
-  font-weight: 400;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   line-height: 140.19999504089355%;
   font-stretch: normal;
   margin-right: 301px;
@@ -55,8 +55,7 @@
   align-self: auto;
   font-style: Light;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 300;
+  font-family: 'Atkinson Hyperlegible';
   line-height: normal;
   font-stretch: normal;
   margin-right: 64px;
@@ -70,8 +69,8 @@
   align-self: auto;
   font-style: Light;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 600;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   line-height: normal;
   font-stretch: normal;
   margin-right: 64px;
@@ -83,10 +82,9 @@
   color: rgba(255, 255, 255, 1);
   height: auto;
   font-size: 32px;
-  align-self: auto;
   font-style: Light;
   text-align: left;
-  font-family: Source Sans Pro;
+  font-family: 'Atkinson Hyperlegible';
   font-weight: 300;
   line-height: normal;
   font-stretch: normal;
@@ -101,8 +99,8 @@
   align-self: auto;
   font-style: Light;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 600;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   line-height: normal;
   font-stretch: normal;
   margin-right: 64px;
@@ -116,7 +114,7 @@
   align-self: auto;
   font-style: Light;
   text-align: left;
-  font-family: Source Sans Pro;
+  font-family: 'Atkinson Hyperlegible';
   font-weight: 300;
   line-height: normal;
   font-stretch: normal;
@@ -131,8 +129,8 @@
   align-self: auto;
   font-style: Light;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 600;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -140,11 +138,11 @@
   text-decoration: none;
 }
 .noahcuadradocomhomepage1-mygames {
-  top: 698px;
+  top: 9%;
   left: 0px;
   right: 0px;
-  width: 1116px;
-  height: 599px;
+  width: fit-content;
+  height: fit-content;
   margin: auto;
   display: flex;
   padding: 0;
@@ -183,8 +181,8 @@
   align-self: auto;
   font-style: Bold;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 700;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -200,7 +198,7 @@
   font-style: Bold;
   text-align: left;
   font-family: Inter;
-  font-weight: 700;
+  font-weight: bold;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -208,7 +206,7 @@
   text-decoration: none;
 }
 .noahcuadradocomhomepage1-text07 {
-  font-weight: 700;
+  font-weight: bold;
 }
 .noahcuadradocomhomepage1-group9 {
   top: 100px;
@@ -245,7 +243,7 @@
   border-radius: 10px;
   flex-direction: column;
   text-decoration: none;
-  background-color: rgba(79, 79, 79, 1);
+  background-color:rgba(23, 23, 23, 1);
 }
 .noahcuadradocomhomepage1-rectangle33 {
   width: 296px;
@@ -272,8 +270,8 @@
   align-self: auto;
   font-style: Bold;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 700;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -288,8 +286,8 @@
   align-self: auto;
   font-style: Regular;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 400;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: normal;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -311,7 +309,7 @@
   border-radius: 10px;
   flex-direction: column;
   text-decoration: none;
-  background-color: rgba(79, 79, 79, 1);
+  background-color: rgba(23, 23, 23, 1);
 }
 .noahcuadradocomhomepage1-rectangle331 {
   width: 296px;
@@ -337,8 +335,8 @@
   align-self: auto;
   font-style: Bold;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 700;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -353,8 +351,8 @@
   align-self: auto;
   font-style: Regular;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 400;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: normal;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -376,7 +374,7 @@
   border-radius: 10px;
   flex-direction: column;
   text-decoration: none;
-  background-color: rgba(79, 79, 79, 1);
+  background-color: rgba(23, 23, 23, 1);
 }
 .noahcuadradocomhomepage1-group68 {
   width: 296px;
@@ -431,8 +429,8 @@
   align-self: auto;
   font-style: Bold;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 700;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -447,8 +445,8 @@
   align-self: auto;
   font-style: Regular;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 400;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: normal;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -456,7 +454,7 @@
   text-decoration: none;
 }
 .noahcuadradocomhomepage1-mydesigns {
-  top: 1500px;
+  top: 1000px;
   left: 0px;
   right: 0px;
   width: 1110px;
@@ -498,8 +496,8 @@
   align-self: auto;
   font-style: Bold;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 700;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -507,7 +505,7 @@
   text-decoration: none;
 }
 .noahcuadradocomhomepage1-text33 {
-  font-weight: 700;
+  font-weight: bold;
 }
 .noahcuadradocomhomepage1-frame14 {
   top: 100px;
@@ -534,7 +532,8 @@
   border-radius: 10px;
   flex-direction: column;
   text-decoration: none;
-  background-color: rgba(79, 79, 79, 1);
+  background-color: rgba(23, 23, 23, 1)
+;
 }
 .noahcuadradocomhomepage1-rectangle332 {
   width: 296px;
@@ -560,8 +559,8 @@
   align-self: center;
   font-style: Bold;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 700;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -584,7 +583,8 @@
   border-radius: 10px;
   flex-direction: column;
   text-decoration: none;
-  background-color: rgba(79, 79, 79, 1);
+  background-color: rgba(23, 23, 23, 1)
+;
 }
 .noahcuadradocomhomepage1-rectangle333 {
   width: 296px;
@@ -610,8 +610,8 @@
   align-self: center;
   font-style: Bold;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 700;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -633,7 +633,8 @@
   border-radius: 10px;
   flex-direction: column;
   text-decoration: none;
-  background-color: rgba(79, 79, 79, 1);
+  background-color: rgba(23, 23, 23, 1)
+;
 }
 .noahcuadradocomhomepage1-rectangle334 {
   width: 296px;
@@ -659,8 +660,8 @@
   align-self: center;
   font-style: Bold;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 700;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -668,7 +669,7 @@
   text-decoration: none;
 }
 .noahcuadradocomhomepage1-footer {
-  top: 2202px;
+  top: 1640px;
   left: 0px;
   width: 100%;
   height: auto;
@@ -680,7 +681,7 @@
   border-color: transparent;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(79, 79, 79, 1);
+  background-color: rgba(23, 23, 23, 1);
 }
 .noahcuadradocomhomepage1-frame68 {
   display: flex;
@@ -692,14 +693,14 @@
 }
 .noahcuadradocomhomepage1-text41 {
   color: rgba(255, 255, 255, 1);
-  height: auto;
   font-size: 48px;
-  align-self: auto;
-  font-style: Regular;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
   text-align: left;
-  font-family: Bebas Neue;
-  font-weight: 400;
-  line-height: 140.19999504089355%;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   font-stretch: normal;
   margin-right: 0;
   margin-bottom: 0px;
@@ -727,8 +728,8 @@
   align-self: auto;
   font-style: Regular;
   text-align: center;
-  font-family: Source Sans Pro;
-  font-weight: 400;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: normal;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -800,7 +801,7 @@
   align-self: auto;
   font-style: Light;
   text-align: left;
-  font-family: Source Sans Pro;
+  font-family: 'Atkinson Hyperlegible';
   font-weight: 300;
   line-height: normal;
   font-stretch: normal;
@@ -815,8 +816,8 @@
   align-self: auto;
   font-style: Light;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 600;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   line-height: normal;
   font-stretch: normal;
   margin-right: 64px;
@@ -830,7 +831,7 @@
   align-self: auto;
   font-style: Light;
   text-align: left;
-  font-family: Source Sans Pro;
+  font-family: 'Atkinson Hyperlegible';
   font-weight: 300;
   line-height: normal;
   font-stretch: normal;
@@ -845,8 +846,8 @@
   align-self: auto;
   font-style: Light;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 600;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   line-height: normal;
   font-stretch: normal;
   margin-right: 64px;
@@ -860,7 +861,7 @@
   align-self: auto;
   font-style: Light;
   text-align: left;
-  font-family: Source Sans Pro;
+  font-family: 'Atkinson Hyperlegible';
   font-weight: 300;
   line-height: normal;
   font-stretch: normal;
@@ -875,8 +876,8 @@
   align-self: auto;
   font-style: Light;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 600;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -905,8 +906,8 @@
   align-self: auto;
   font-style: Regular;
   text-align: center;
-  font-family: Source Sans Pro;
-  font-weight: 400;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: normal;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -951,8 +952,8 @@
 .noahcuadradocomhomepage1-imcontainer {
   top: 0px;
   left: 0px;
-  width: 540px;
-  height: 56px;
+  width: 740px;
+  height: 80px;
   display: flex;
   padding: 0 24px;
   position: relative;
@@ -963,14 +964,14 @@
 }
 .noahcuadradocomhomepage1-text53 {
   color: rgba(255, 255, 255, 1);
-  width: 111px;
+  width: 160px;
   height: auto;
   font-size: 48px;
   align-self: auto;
   font-style: Bold;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 700;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   line-height: normal;
   font-stretch: normal;
   margin-right: 10px;
@@ -979,14 +980,14 @@
 }
 .noahcuadradocomhomepage1-text55 {
   color: rgba(255, 255, 255, 1);
-  width: 264px;
+  width: 300px;
   height: auto;
   font-size: 48px;
   align-self: auto;
   font-style: Bold;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 700;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -1004,8 +1005,8 @@
   align-self: auto;
   font-style: SemiBold;
   text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 600;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: bold;
   line-height: normal;
   font-stretch: normal;
   text-decoration: none;
@@ -1029,8 +1030,8 @@
   align-self: auto;
   font-style: Regular;
   text-align: center;
-  font-family: Source Sans Pro;
-  font-weight: 400;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: normal;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -1044,8 +1045,8 @@
   align-self: auto;
   font-style: italic;
   text-align: center;
-  font-family: Source Sans Pro;
-  font-weight: 400;
+  font-family: 'Atkinson Hyperlegible';
+  font-weight: normal;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -1054,7 +1055,7 @@
 }
 @media(max-width: 1600px) {
   .noahcuadradocomhomepage1-noahcuadradocomhomepage1 {
-    height: 2753px;
+    height: 1200px;
   }
   .noahcuadradocomhomepage1-topbar {
     width: 100%;
@@ -1062,20 +1063,21 @@
   .noahcuadradocomhomepage1-text {
     color: rgb(255, 255, 255);
     font-size: 48px;
-    font-family: Bebas Neue;
-    font-weight: 400;
+    font-family: 'Atkinson Hyperlegible';
+    font-weight: bold;
     line-height: 140.2%;
     text-decoration: none;
   }
   .noahcuadradocomhomepage1-text03 {
     color: rgb(255, 255, 255);
     font-size: 32px;
-    font-family: Source Sans Pro;
+    font-family: 'Atkinson Hyperlegible';
     font-weight: 300;
     line-height: normal;
     text-decoration: none;
   }
   .noahcuadradocomhomepage1-mygames {
+    top: 260px;
     left: 0px;
     right: 0px;
     margin: auto;
@@ -1105,8 +1107,8 @@
     color: rgb(255, 255, 255);
     font-size: 32px;
     align-self: center;
-    font-family: Source Sans Pro;
-    font-weight: 700;
+    font-family: 'Atkinson Hyperlegible';
+    font-weight: bold;
     line-height: normal;
     margin-bottom: 0px;
     text-decoration: none;
@@ -1118,8 +1120,8 @@
     color: rgb(255, 255, 255);
     font-size: 30px;
     align-self: center;
-    font-family: Source Sans Pro;
-    font-weight: 700;
+    font-family: 'Atkinson Hyperlegible';
+    font-weight: bold;
     line-height: normal;
     margin-bottom: 0px;
     text-decoration: none;
@@ -1216,7 +1218,7 @@
   width: 0px;
   height: 56px;
   flex-grow: 0;
-  font-family: "Source Sans Pro";
+  font-family: 'Atkinson Hyperlegible';
   font-size: 48px;
   font-weight: bold;
   font-stretch: normal;
@@ -1235,7 +1237,7 @@
   width: 0px;
   height: 56px;
   flex-grow: 0;
-  font-family: "Source Sans Pro";
+  font-family: 'Atkinson Hyperlegible';
   font-size: 48px;
   font-weight: bold;
   font-stretch: normal;
@@ -1253,7 +1255,7 @@
 
 
 .test{
-  font-family: "Source Sans Pro";
+  font-family: 'Atkinson Hyperlegible';
   font-size: 34px;
   font-weight: bold;
   font-stretch: normal;
@@ -1328,7 +1330,7 @@
   width: 111px;
   height: 56px;
   flex-grow: 0;
-  font-family: "Source Sans Pro";
+  font-family: 'Atkinson Hyperlegible';
   font-size: 48px;
   font-weight: bold;
   font-stretch: normal;
@@ -1344,7 +1346,7 @@
   width: 0px;
   height: 56px;
   flex-grow: 0;
-  font-family: "Source Sans Pro";
+  font-family: 'Atkinson Hyperlegible';
   font-size: 48px;
   font-weight: bold;
   font-stretch: normal;
@@ -1359,7 +1361,7 @@
   width: 0px;
   height: 56px;
   flex-grow: 0;
-  font-family: "Source Sans Pro";
+  font-family: 'Atkinson Hyperlegible';
   font-size: 48px;
   font-weight: bold;
   font-stretch: normal;
@@ -1383,3 +1385,4 @@
   border-color: transparent;
   justify-content: center;
 }
+
