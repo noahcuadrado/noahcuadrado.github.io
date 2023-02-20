@@ -1169,20 +1169,7 @@
     align-self: center;
   }
 }
-@media(max-width: 1200px) {
-  .noahcuadradocomhomepage1-mygames {
-    left: 0px;
-    right: 0px;
-    width: 1132px;
-    height: 625px;
-    margin: auto;
-  }
-  .noahcuadradocomhomepage1-mydesigns {
-    left: 0px;
-    right: 0px;
-    margin: auto;
-  }
-}
+
 @media(max-width: 6000px){
   .noahcuadradocomhomepage1-mygames {
     left: 0px;
