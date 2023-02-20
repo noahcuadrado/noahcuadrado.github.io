@@ -423,7 +423,8 @@
 }
 .noahcuadradocomhomepage1-text25 {
   color: rgba(255, 255, 255, 1);
-  width: 302px;
+  width: 312px;
+  height: 42px;
   height: auto;
   font-size: 44px;
   align-self: auto;
@@ -657,6 +658,8 @@
   color: rgba(255, 255, 255, 1);
   height: auto;
   font-size: 30px;
+  width: 312px;
+  height: 42px;
   align-self: center;
   font-style: Bold;
   text-align: left;
