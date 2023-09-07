@@ -1,3 +1,219 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+
+/* STYLE.CSS */
+.theme_selector{
+  position:fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: inherit;
+}
+.theme_selector .vertical_center{
+  position:fixed;
+  top:50%;
+  left:0;
+  width: 100vw;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.theme_selector .column{
+  width: 49%;
+  display: inline-block;
+}
+.theme_selector .flex{
+  display:flex;
+  width: 100%;
+}
+.theme_selector .button{
+  color:black;
+  /*background-color: white;*/
+  border: 0px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.theme_selector .column-1 .flex{
+  flex-direction: row-reverse;
+  margin-right: 3em;
+}
+.theme_selector .column-1 .button.light{
+  background-color: inherit;
+  mix-blend-mode: difference;
+  transition: background-color 600ms;
+}
+.theme_selector .column-1 .button.light:hover{
+  color: white;
+  background-color: black;
+  box-shadow: 5px 5px 0px #B9B9B9;
+  transition: background-color 600ms;
+}
+.theme_selector .column-2 .button.dark{
+  margin-left: 3em;
+}
+.theme_selector .column-2 .button.dark:hover{
+  color: black;
+  background-color: white;
+  box-shadow: 5px 5px 0px #B9B9B9;
+  transition: background-color 350ms;
+}
+@font-face {
+  font-family: "AtkinsonHyperlegible-Bold";
+  src: url("./fonts/AtkinsonHyperlegible-Bold.ttf") format("truetype");
+}
+body{
+  background-color: white;
+  font-family: "AtkinsonHyperlegible-Bold";
+  transition: background-color 800ms;
+}
+.dark{
+  background-color: black;
+  transition: background-color 800ms;
+}
+.lightcolor{
+  color:white!important;
+}
+.d-none{
+  display:none;
+}
+
+
+
+
+:root {
+  --dl-color-gray-500: #595959;
+  --dl-color-gray-700: #999999;
+  --dl-color-gray-900: #D9D9D9;
+  --dl-size-size-large: 144px;
+  --dl-size-size-small: 48px;
+  --dl-color-danger-300: #A22020;
+  --dl-color-danger-500: #BF2626;
+  --dl-color-danger-700: #E14747;
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #FFFFFF;
+  --dl-size-size-medium: 96px;
+  --dl-size-size-xlarge: 192px;
+  --dl-size-size-xsmall: 16px;
+  --dl-space-space-unit: 16px;
+  --dl-color-primary-100: #003EB3;
+  --dl-color-primary-300: #0074F0;
+  --dl-color-primary-500: #14A9FF;
+  --dl-color-primary-700: #85DCFF;
+  --dl-color-success-300: #199033;
+  --dl-color-success-500: #32A94C;
+  --dl-color-success-700: #4CC366;
+  --dl-size-size-xxlarge: 288px;
+  --dl-color-default-text: rgba(23, 26, 33, 1);
+  --dl-size-size-maxwidth: 1400px;
+  --dl-color-default-error: rgba(241, 81, 86, 1);
+  --dl-radius-radius-round: 50%;
+  --dl-space-space-halfunit: 8px;
+  --dl-space-space-sixunits: 96px;
+  --dl-space-space-twounits: 32px;
+  --dl-color-default-correct: rgba(14, 173, 105, 1);
+  --dl-radius-radius-radius2: 2px;
+  --dl-radius-radius-radius4: 4px;
+  --dl-radius-radius-radius8: 8px;
+  --dl-space-space-fiveunits: 80px;
+  --dl-space-space-fourunits: 64px;
+  --dl-space-space-threeunits: 48px;
+  --dl-color-default-errortext: rgba(165, 64, 45, 1);
+  --dl-color-default-textinput: rgba(23, 26, 33, 0.6000000238418579);
+  --dl-space-space-oneandhalfunits: 24px;
+  --dl-color-default-textinputerror: rgba(241, 81, 86, 0.699999988079071);
+}
+.button {
+  color: var(--dl-color-gray-black);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.input {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.textarea {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.list {
+  width: 100%;
+  margin: 1em 0px 1em 0px;
+  display: block;
+  padding: 0px 0px 0px 1.5rem;
+  list-style-type: none;
+  list-style-position: outside;
+}
+.list-item {
+  display: list-item;
+}
+.teleport-show {
+  display: flex !important;
+  transform: none !important;
+}
+.Heading {
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.Content {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INDEX-DARK.CSS */
 .noahcuadradocomhomepage1-container {
   min-height: 100vh;
 }
