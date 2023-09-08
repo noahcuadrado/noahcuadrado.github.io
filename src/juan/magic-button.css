@@ -1,74 +1,64 @@
-.magic-button{
-    /* magic-button properties */
-    border: 0px solid; /* border black with 40% opacity */
-    transition: border-width 0.1s ease-in; /* border-width transition */
-    border-radius: 8px;
-    border-color: white;
+.magic-button {
+  /* magic-button properties */
+  border: 0px solid; /* border black with 40% opacity */
+  transition: border-width 0.1s ease-in; /* border-width transition */
+  border-radius: 8px;
+  border-color: white;
 }
-.magic-button:hover{
-    border-width: 5px; /* border-width transition */
-}
-
-
-
-
-
-.magic-button.static{
-    background: linear-gradient(60deg, #d2d2d2 0%, #d2d2d2 24%, #d2d2d2 65%, #d2d2d2 100%); /* utiliza este gradiente por defecto para que no haga un corte con un background verde durante la transicion */
-    transition: background 0.2s easy-in; /* border-width transition */
-}
-.magic-button.static:hover{
-    background: linear-gradient(60deg, rgba(255,198,255,1) 0%, rgba(160,196,255,1) 24%, rgba(202,255,191,1) 65%, rgba(255,214,165,1) 100%);
+.magic-button:hover {
+  border-width: 5px; /* border-width transition */
 }
 
-
-
-
-
-.magic-button.animated{
-    background: linear-gradient(60deg, #d2d2d2 0%, #d2d2d2 24%, #d2d2d2 65%, #d2d2d2 100%); /* utiliza este gradiente por defecto para que no haga un corte con un background verde durante la transicion */
-    transition: background 0.5s easy-in; /* border-width transition */
+.magic-button.static {
+  background: linear-gradient(
+    60deg,
+    #d2d2d2 0%,
+    #d2d2d2 24%,
+    #d2d2d2 65%,
+    #d2d2d2 100%
+  ); /* utiliza este gradiente por defecto para que no haga un corte con un background verde durante la transicion */
+  transition: background 0.2s easy-in; /* border-width transition */
 }
-.magic-button.animated:hover{
-    background: linear-gradient(60deg, rgba(255,198,255,1) 0%, rgba(160,196,255,1) 24%, rgba(202,255,191,1) 65%, rgba(255,214,165,1) 100%);
-    animation: gradient 4s ease infinite;
-    background-size: 600% 600%;
-    /*animation-fill-mode: forwards;*/
+.magic-button.static:hover {
+  background: linear-gradient(
+    60deg,
+    rgba(255, 198, 255, 1) 0%,
+    rgba(160, 196, 255, 1) 24%,
+    rgba(202, 255, 191, 1) 65%,
+    rgba(255, 214, 165, 1) 100%
+  );
 }
-@keyframes background-animated {
-    0% {background: linear-gradient(60deg, rgba(255,198,255,1) 0%, rgba(160,196,255,1) 24%, rgba(202,255,191,1) 65%, rgba(255,214,165,1) 100%);}
-    5%   {background: linear-gradient(60deg, rgba(255,214,165,1) 0%, rgba(255,198,255,1) 24%, rgba(160,196,255,1) 65%, rgba(202,255,191,1) 100%);}
-    10%  {background: linear-gradient(60deg, rgba(202,255,191,1) 0%, rgba(255,214,165,1) 24%, rgba(255,198,255,1) 65%, rgba(160,196,255,1) 100%);}
-    15%  {background: linear-gradient(60deg, rgba(160,196,255,1) 0%, rgba(202,255,191,1) 24%, rgba(255,214,165,1) 65%, rgba(255,198,255,1) 100%);}
-    20%  {background: linear-gradient(60deg, rgba(255,198,255,1) 0%, rgba(160,196,255,1) 24%, rgba(202,255,191,1) 65%, rgba(255,214,165,1) 100%);}
-    25%  {background: linear-gradient(60deg, rgba(255,214,165,1) 0%, rgba(255,198,255,1) 24%, rgba(160,196,255,1) 65%, rgba(202,255,191,1) 100%);}
-    30%  {background: linear-gradient(60deg, rgba(202,255,191,1) 0%, rgba(255,214,165,1) 24%, rgba(255,198,255,1) 65%, rgba(160,196,255,1) 100%);}
-    35%  {background: linear-gradient(60deg, rgba(160,196,255,1) 0%, rgba(202,255,191,1) 24%, rgba(255,214,165,1) 65%, rgba(255,198,255,1) 100%);}
-    40%  {background: linear-gradient(60deg, rgba(255,198,255,1) 0%, rgba(160,196,255,1) 24%, rgba(202,255,191,1) 65%, rgba(255,214,165,1) 100%);}
-    45%  {background: linear-gradient(60deg, rgba(255,214,165,1) 0%, rgba(255,198,255,1) 24%, rgba(160,196,255,1) 65%, rgba(202,255,191,1) 100%);}
-    50%  {background: linear-gradient(60deg, rgba(202,255,191,1) 0%, rgba(255,214,165,1) 24%, rgba(255,198,255,1) 65%, rgba(160,196,255,1) 100%);}
-    55%  {background: linear-gradient(60deg, rgba(160,196,255,1) 0%, rgba(202,255,191,1) 24%, rgba(255,214,165,1) 65%, rgba(255,198,255,1) 100%);}
-    60%  {background: linear-gradient(60deg, rgba(255,198,255,1) 0%, rgba(160,196,255,1) 24%, rgba(202,255,191,1) 65%, rgba(255,214,165,1) 100%);}
-    65%  {background: linear-gradient(60deg, rgba(255,214,165,1) 0%, rgba(255,198,255,1) 24%, rgba(160,196,255,1) 65%, rgba(202,255,191,1) 100%);}
-    70%  {background: linear-gradient(60deg, rgba(202,255,191,1) 0%, rgba(255,214,165,1) 24%, rgba(255,198,255,1) 65%, rgba(160,196,255,1) 100%);}
-    75%  {background: linear-gradient(60deg, rgba(160,196,255,1) 0%, rgba(202,255,191,1) 24%, rgba(255,214,165,1) 65%, rgba(255,198,255,1) 100%);}
-    80%  {background: linear-gradient(60deg, rgba(255,198,255,1) 0%, rgba(160,196,255,1) 24%, rgba(202,255,191,1) 65%, rgba(255,214,165,1) 100%);}
-    85%  {background: linear-gradient(60deg, rgba(255,214,165,1) 0%, rgba(255,198,255,1) 24%, rgba(160,196,255,1) 65%, rgba(202,255,191,1) 100%);}
-    90%  {background: linear-gradient(60deg, rgba(202,255,191,1) 0%, rgba(255,214,165,1) 24%, rgba(255,198,255,1) 65%, rgba(160,196,255,1) 100%);}
-    95%  {background: linear-gradient(60deg, rgba(160,196,255,1) 0%, rgba(202,255,191,1) 24%, rgba(255,214,165,1) 65%, rgba(255,198,255,1) 100%);}
-    100%   {background: linear-gradient(60deg, rgba(255,198,255,1) 0%, rgba(160,196,255,1) 24%, rgba(202,255,191,1) 65%, rgba(255,214,165,1) 100%);}
+
+.magic-button.animated {
+  background: linear-gradient(
+    60deg,
+    #d2d2d2 0%,
+    #d2d2d2 24%,
+    #d2d2d2 65%,
+    #d2d2d2 100%
+  ); /* utiliza este gradiente por defecto para que no haga un corte con un background verde durante la transicion */
+  transition: background 0.5s easy-in; /* border-width transition */
 }
+.magic-button.animated:hover {
+  background: linear-gradient(
+    60deg,
+    rgba(255, 198, 255, 1) 0%,
+    rgba(160, 196, 255, 1) 24%,
+    rgba(202, 255, 191, 1) 65%,
+    rgba(255, 214, 165, 1) 100%
+  );
+  animation: gradient 4s ease infinite;
+  background-size: 600% 600%;
+}
+
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-
-
-
