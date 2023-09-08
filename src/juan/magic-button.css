@@ -2,7 +2,7 @@
     /* magic-button properties */
     border: 0px solid rgba(0, 0, 0, .4); /* border black with 40% opacity */
     transition: border-width 0.1s ease-in; /* border-width transition */
-    border-radius: 15px;
+    border-radius: 8px;
 }
 .magic-button:hover{
     border-width: 5px; /* border-width transition */
