@@ -1,8 +1,9 @@
 .magic-button{
     /* magic-button properties */
-    border: 0px solid rgba(0, 0, 0, .4); /* border black with 40% opacity */
+    border: 0px solid; /* border black with 40% opacity */
     transition: border-width 0.1s ease-in; /* border-width transition */
     border-radius: 8px;
+    border-color: white;
 }
 .magic-button:hover{
     border-width: 5px; /* border-width transition */
@@ -30,16 +31,12 @@
 }
 .magic-button.animated:hover{
     background: linear-gradient(60deg, rgba(255,198,255,1) 0%, rgba(160,196,255,1) 24%, rgba(202,255,191,1) 65%, rgba(255,214,165,1) 100%);
-
-    animation-name: background-animated;
-    animation-duration: 5s; /* si se disminuye va a parecer discoteca, se aumenta para un movimiento mas fluido */
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: 0.4s;
+    animation: gradient 4s ease infinite;
+    background-size: 600% 600%;
     /*animation-fill-mode: forwards;*/
 }
 @keyframes background-animated {
-    from {background: linear-gradient(60deg, rgba(255,198,255,1) 0%, rgba(160,196,255,1) 24%, rgba(202,255,191,1) 65%, rgba(255,214,165,1) 100%);}
+    0% {background: linear-gradient(60deg, rgba(255,198,255,1) 0%, rgba(160,196,255,1) 24%, rgba(202,255,191,1) 65%, rgba(255,214,165,1) 100%);}
     5%   {background: linear-gradient(60deg, rgba(255,214,165,1) 0%, rgba(255,198,255,1) 24%, rgba(160,196,255,1) 65%, rgba(202,255,191,1) 100%);}
     10%  {background: linear-gradient(60deg, rgba(202,255,191,1) 0%, rgba(255,214,165,1) 24%, rgba(255,198,255,1) 65%, rgba(160,196,255,1) 100%);}
     15%  {background: linear-gradient(60deg, rgba(160,196,255,1) 0%, rgba(202,255,191,1) 24%, rgba(255,214,165,1) 65%, rgba(255,198,255,1) 100%);}
@@ -59,7 +56,18 @@
     85%  {background: linear-gradient(60deg, rgba(255,214,165,1) 0%, rgba(255,198,255,1) 24%, rgba(160,196,255,1) 65%, rgba(202,255,191,1) 100%);}
     90%  {background: linear-gradient(60deg, rgba(202,255,191,1) 0%, rgba(255,214,165,1) 24%, rgba(255,198,255,1) 65%, rgba(160,196,255,1) 100%);}
     95%  {background: linear-gradient(60deg, rgba(160,196,255,1) 0%, rgba(202,255,191,1) 24%, rgba(255,214,165,1) 65%, rgba(255,198,255,1) 100%);}
-    to   {background: linear-gradient(60deg, rgba(255,198,255,1) 0%, rgba(160,196,255,1) 24%, rgba(202,255,191,1) 65%, rgba(255,214,165,1) 100%);}
+    100%   {background: linear-gradient(60deg, rgba(255,198,255,1) 0%, rgba(160,196,255,1) 24%, rgba(202,255,191,1) 65%, rgba(255,214,165,1) 100%);}
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 
