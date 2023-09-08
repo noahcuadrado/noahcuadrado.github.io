@@ -1,44 +1,10 @@
-.buttons-container{
-    /* location properties */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    height: 70vh;
-}
-
-.button{
-    /* size properties */
-    width: 100%;
-    height: 30%;
-
-    background-color: transparent;
-
-    margin: 10px;
-}
-
-
-
-.button .inside-button{
-    /* location properties */
-    z-index: 1;
-
-    /* size properties */
-    width: 100%;
-    height: 100%;
-
-    /* button properties */
+.magic-button{
+    /* magic-button properties */
     border: 0px solid rgba(0, 0, 0, .4); /* border black with 40% opacity */
     transition: border-width 0.1s ease-in; /* border-width transition */
     border-radius: 15px;
-    
-    /* text properties */
-    font-size: 8em;
-    color: #1e1e1e;
-    font-weight: bolder;
 }
-.button .inside-button:hover{
+.magic-button:hover{
     border-width: 5px; /* border-width transition */
 }
 
@@ -46,11 +12,11 @@
 
 
 
-.button .inside-button.static{
+.magic-button.static{
     background: linear-gradient(60deg, #d2d2d2 0%, #d2d2d2 24%, #d2d2d2 65%, #d2d2d2 100%); /* utiliza este gradiente por defecto para que no haga un corte con un background verde durante la transicion */
     transition: background 0.2s easy-in; /* border-width transition */
 }
-.button .inside-button.static:hover{
+.magic-button.static:hover{
     background: linear-gradient(60deg, rgba(255,198,255,1) 0%, rgba(160,196,255,1) 24%, rgba(202,255,191,1) 65%, rgba(255,214,165,1) 100%);
 }
 
@@ -58,15 +24,15 @@
 
 
 
-.button .inside-button.animated{
+.magic-button.animated{
     background: linear-gradient(60deg, #d2d2d2 0%, #d2d2d2 24%, #d2d2d2 65%, #d2d2d2 100%); /* utiliza este gradiente por defecto para que no haga un corte con un background verde durante la transicion */
     transition: background 0.5s easy-in; /* border-width transition */
 }
-.button .inside-button.animated:hover{
+.magic-button.animated:hover{
     background: linear-gradient(60deg, rgba(255,198,255,1) 0%, rgba(160,196,255,1) 24%, rgba(202,255,191,1) 65%, rgba(255,214,165,1) 100%);
 
     animation-name: background-animated;
-    animation-duration: 10s; /* si se disminuye va a parecer discoteca, se aumenta para un movimiento mas fluido */
+    animation-duration: 5s; /* si se disminuye va a parecer discoteca, se aumenta para un movimiento mas fluido */
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-delay: 0.4s;

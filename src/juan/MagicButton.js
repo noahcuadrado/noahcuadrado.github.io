@@ -2,18 +2,13 @@ import {React} from 'react';
 
 import "./magic-button.css";
 
-const MagicButton = props => 
+const MagicButton = ({ type, ...props }) => 
 {
+    //type can be "static" or "animated"
     return (
-        <>
-            <div class="button">
-                <button class="inside-button static">Open to work</button>
-            </div> 
-            <div class="button">
-                <button class="inside-button animated">Open to work</button>
-            </div>
-        </>
-        
+        <button className={`magic-button ${type} ${props.className}`} onClick={props.onClick}>
+            {props.children}
+        </button>
     );
 };
 export default MagicButton;

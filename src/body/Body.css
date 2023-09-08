@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+
+.magic-button-source{
+  width: 150px;
+  height: 75px;
+
+  /* text properties */
+  font-size: 30px;
+  color: #1e1e1e;
+  font-weight: bolder;
+}

@@ -694,6 +694,7 @@ body{
   justify-content: flex-start;
   background-color: transparent;
 }
+
 .noahcuadradocomhomepage1-frame71 {
   top: 0px;
   left: 0px;
@@ -888,7 +889,7 @@ body{
   text-decoration: none;
 }
 .noahcuadradocomhomepage1-footer {
-  top: 1640px;
+  top: 2280px;
   left: 0px;
   width: 100%;
   height: auto;
@@ -1592,3 +1593,34 @@ body{
   justify-content: center;
 }
 
+
+
+
+.noahcuadradocomhomepage1-mytools {
+  top: 1640px;
+  left: 0px;
+  right: 0px;
+  width: 1110px;
+  height: 517px;
+  margin: auto;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.noahcuadradocomhomepage1-mytools .noahcuadradocomhomepage1-frame14{
+  width: 500px;
+  height: 400px;
+}
