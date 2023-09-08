@@ -47,7 +47,7 @@
     rgba(202, 255, 191, 1) 65%,
     rgba(255, 214, 165, 1) 100%
   );
-  animation: gradient 4s ease infinite;
+  animation: gradient 4s ease infinite reverse;
   background-size: 600% 600%;
 }
 
