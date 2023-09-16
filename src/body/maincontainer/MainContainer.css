@@ -1,0 +1,7 @@
+.main-container{
+    border-radius: 16px;
+    border: 1px solid #535353;
+    background: linear-gradient(269deg, #1D1D1D 0%, #262626 100%);
+
+    color: white;
+}
