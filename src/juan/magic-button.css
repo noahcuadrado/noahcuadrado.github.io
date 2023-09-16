@@ -1,52 +1,65 @@
-.magic-button{
-    /* magic-button properties */
-    border: 5px solid #d2d2d2; /* border black with 40% opacity */
-    transition: border-width 0.1s ease-in; /* border-width transition */
-    border-radius: 8px;
+.magic-button {
+  border-radius: 8px;
+  transition: 100ms linear;
 }
-.magic-button:hover{
-    border-width: 5px; /* border-width transition */
-    color: black;
+.magic-button:hover {
+  outline: 4px white solid;
+  color: black;
 }
 
-
-
-
-
-.magic-button.static{
-    background: linear-gradient(60deg, #d2d2d2 0%, #d2d2d2 24%, #d2d2d2 65%, #d2d2d2 100%); /* utiliza este gradiente por defecto para que no haga un corte con un background verde durante la transicion */
-    transition: background 0.2s easy-in; /* border-width transition */
-}
-.magic-button.static:hover{
-    background: linear-gradient(60deg, rgba(255,198,255,1) 0%, rgba(160,196,255,1) 24%, rgba(202,255,191,1) 65%, rgba(255,214,165,1) 100%);
+.magic-button.static {
+  background: linear-gradient(
+    60deg,
+    #d2d2d2 0%,
+    #d2d2d2 24%,
+    #d2d2d2 65%,
+    #d2d2d2 100%
+  ); /* utiliza este gradiente por defecto para que no haga un corte con un background verde durante la transicion */ /* border-width transition */
 }
 
-
-
-
-
-.magic-button.animated{
-    background: linear-gradient(60deg, #d2d2d2 0%, #d2d2d2 24%, #d2d2d2 65%, #d2d2d2 100%); /* utiliza este gradiente por defecto para que no haga un corte con un background verde durante la transicion */
-    transition: background 0.5s easy-in; /* border-width transition */
+.magic-button.static:hover {
+  background: linear-gradient(
+    60deg,
+    rgba(255, 198, 255, 1) 0%,
+    rgba(160, 196, 255, 1) 24%,
+    rgba(202, 255, 191, 1) 65%,
+    rgba(255, 214, 165, 1) 100%
+  );
+  outline: 4px white solid;
 }
-.magic-button.animated:hover{
-    background: linear-gradient(60deg, rgba(255,198,255,1) 0%, rgba(160,196,255,1) 24%, rgba(202,255,191,1) 65%, rgba(255,214,165,1) 100%);
-    animation: gradient 4s ease infinite reverse;
-    background-size: 600% 600%;
-    /*animation-fill-mode: forwards;*/
+
+.magic-button.animated {
+  background: linear-gradient(
+    60deg,
+    #d2d2d2 0%,
+    #d2d2d2 24%,
+    #d2d2d2 65%,
+    #d2d2d2 100%
+  ); /* utiliza este gradiente por defecto para que no haga un corte con un background verde durante la transicion */ /* border-width transition */
+}
+
+.magic-button.animated:hover {
+  background: linear-gradient(
+    60deg,
+    rgba(255, 198, 255, 1) 0%,
+    rgba(160, 196, 255, 1) 24%,
+    rgba(202, 255, 191, 1) 65%,
+    rgba(255, 214, 165, 1) 100%
+  );
+  outline: 4px white solid;
+  animation: gradient 4s ease infinite reverse;
+  background-size: 600% 600%;
+  /*animation-fill-mode: forwards;*/
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-
-
-
