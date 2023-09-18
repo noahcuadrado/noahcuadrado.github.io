@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from 'react';
 import MagicButton from '../juan/MagicButton.js';
 import MainContainer from './maincontainer/MainContainer.js';
-import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
+import { TbArrowUpRight } from "react-icons/tb";
 
 //import all images from ../images/*
 /*
@@ -90,7 +90,7 @@ function Body() {
             </MainContainer>
           </div>
           <div className="body p-3">
-            <div className='row mb-3'>
+            <div className='row mb-4'>
               <div className='col-8'>
                 <MainContainer className='h-100'>
                   <div className='mb-2'><span className='big-text'>My most recent project</span></div>
@@ -102,15 +102,15 @@ function Body() {
                     <MagicButton type="animated" className="btn small-text p-3 me-3">Read the Case Study</MagicButton>
                     <MagicButton type="animated" className="btn small-text p-3">
                       <>
-                        <span className='me-3'>Visit</span>
-                        <FaArrowUpRightFromSquare />
+                        <span className='me-1'>Visit</span>
+                        <TbArrowUpRight />
                       </>
                     </MagicButton>
                   </div>
                 </MainContainer>
               </div>
-              <div className='col-4'>
-                <div className='h-50 pb-3'>
+              <div className='col-4 mb-2'>
+                <div className='h-50 pb-3 mb-2'>
                   <MainContainer className='h-100'>
                     <div className='m-3'>
                       <div className='big-text'><span>I am currently</span></div>
@@ -125,15 +125,15 @@ function Body() {
                     <div className='mid-text'><span>Visit my itch.io!</span></div>
                     <MagicButton type="animated" className="btn small-text p-3 mt-5">
                       <>
-                        <span className='me-3'>Visit</span>
-                        <FaArrowUpRightFromSquare />
+                        <span className='me-1'>Visit</span>
+                        <TbArrowUpRight />
                       </>
                     </MagicButton>
                   </MainContainer>
                 </div>
               </div>
             </div>
-            <div className='row mb-3'>
+            <div className='row mb-1'>
               <div className='col'>
                 <MainContainer className=''>
                   <div className='mid-text'><span>Currently</span></div>

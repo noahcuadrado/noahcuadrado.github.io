@@ -47,7 +47,7 @@
     rgba(255, 214, 165, 1) 100%
   );
   outline: 4px white solid;
-  animation: gradient 4s ease infinite reverse;
+  animation: gradient 2.8s ease infinite reverse;
   background-size: 600% 600%;
   /*animation-fill-mode: forwards;*/
 }
