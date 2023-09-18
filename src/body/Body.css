@@ -39,8 +39,38 @@
 .empty-button {
   background: transparent;
   border-color: transparent;
+  transition: 320ms linear;
+}
+.empty-button:hover {
+  border-color: transparent;
+  background: repeating-linear-gradient(
+    60deg,
+    rgba(255, 198, 255, 1) 0%,
+    rgba(160, 196, 255, 1) 24%,
+    rgba(202, 255, 191, 1) 65%,
+    rgba(255, 214, 165, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 2.8s ease infinite reverse;
+  background-size: 400% 400%;
+}
+
+.empty-button:active {
+  border-color: transparent;
 }
 
 .magic-button svg {
   margin-top: -5px;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
