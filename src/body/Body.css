@@ -6,6 +6,13 @@
   font-family: Switzer;
   font-size: 45px;
   font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+.logo-text {
+  font-family: Switzer;
+  font-size: 45px;
+  font-style: normal;
   font-weight: 900;
   line-height: 100%;
 }
@@ -13,14 +20,14 @@
   font-family: Switzer;
   font-size: 30px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 100%;
 }
 .small-text {
   font-family: Switzer;
   font-size: 25px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 100%;
 }
 

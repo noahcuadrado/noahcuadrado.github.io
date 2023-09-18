@@ -76,7 +76,7 @@ function Body() {
           <div className="header p-3">
             <MainContainer className="menu">
               <div className="row">
-                <div className="col-4 big-text">
+                <div className="col-4 logo-text">
                   noah cuadrado.
                 </div>
                 <div className="col-8">
@@ -95,7 +95,7 @@ function Body() {
                 <MainContainer className='h-100'>
                   <div className='mb-2'><span className='big-text'>My most recent project</span></div>
                   <div><span className='small-text'>Rothio Tome Integrations’ Website</span></div>
-                  <div className='image-container mt-4 mb-5'>
+                  <div className='image-container mt-4 mb-4'>
                     AAAAAAAAAAAAAHHHHHHHHH
                   </div>
                   <div>
