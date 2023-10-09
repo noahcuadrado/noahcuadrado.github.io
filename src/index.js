@@ -2,12 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Body from './body/Body';
+import NightMode from './body/nightmode/NightMode';
 import reportWebVitals from './others/reportWebVitals';
+
+import {
+  Routes,
+  Route,
+  BrowserRouter
+} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Body />
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Body />} />
+        <Route path="/nightmode" element={<NightMode />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

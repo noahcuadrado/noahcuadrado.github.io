@@ -6,6 +6,13 @@
   outline: 4px white solid;
   color: black;
 }
+.magic-button a {
+  color: var(--bs-btn-hover-color);
+  text-decoration: none;
+}
+.magic-button:active {
+  color: black;
+}
 
 .magic-button.static {
   background: linear-gradient(
@@ -51,7 +58,9 @@
   background-size: 600% 600%;
   /*animation-fill-mode: forwards;*/
 }
-
+.magic-button.animated:active {
+  color: grey;
+}
 @keyframes gradient {
   0% {
     background-position: 0% 50%;

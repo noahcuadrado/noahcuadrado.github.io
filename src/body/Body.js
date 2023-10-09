@@ -16,7 +16,7 @@ import image10 from '../images/vector2381-nwwa.svg';
 import image11 from '../images/vector2381-twnr.svg';
 */
 import image12 from '../images/rectangle342381-zckf-200h.png';
-
+import nightmode from '../images/night_mode.png';
 
 import './Body.css';
 function Body() {
@@ -69,6 +69,12 @@ function Body() {
     //eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+
+  function openLink(link) {
+    window.open(link, '_blank');
+  }
+
+
   return (
     <>
       {themeSelected &&
@@ -94,17 +100,15 @@ function Body() {
               <div className='col-8'>
                 <MainContainer className='h-100'>
                   <div className='mb-2'><span className='big-text'>My most recent project</span></div>
-                  <div><span className='small-text'>Rothio Tome Integrations’ Website</span></div>
-                  <div className='image-container mt-4 mb-4'>
-                    AAAAAAAAAAAAAHHHHHHHHH
+                  <div><span className='small-text'>Night Mode 🌙</span></div>
+                  <div className='image-container mt-4 mb-4 overflow-hidden'>
+                    <img src={nightmode} alt="Night Mode" className="AAAAAAAAAAAAAHHHHHHHHH" />
                   </div>
                   <div>
-                    <MagicButton type="animated" className="btn small-text p-3 me-3">Read the Case Study</MagicButton>
-                    <MagicButton type="animated" className="btn small-text p-3">
-                      <>
-                        <span className='me-1'>Visit</span>
-                        <TbArrowUpRight />
-                      </>
+                    <MagicButton type="animated" className="btn small-text p-3 me-3" onClick={() => openLink("/nightmode")}>Play the game!</MagicButton>
+                    <MagicButton type="animated" className="btn small-text p-3" onClick={() => openLink("https://noahuxui.itch.io/night-mode")}>
+                      <span className='me-1'>Visit</span>
+                      <TbArrowUpRight />
                     </MagicButton>
                   </div>
                 </MainContainer>
@@ -123,11 +127,11 @@ function Body() {
                   <MainContainer className='h-100'>
                     <div className='big-text'><span>Looking for games?</span></div>
                     <div className='mid-text'><span>Visit my itch.io!</span></div>
-                    <MagicButton type="animated" className="btn small-text p-3 mt-5">
-                      <>
+                    <MagicButton type="animated" className="btn small-text p-3 mt-5" >
+                      <a href='https://noahuxui.itch.io' target='_blank'>
                         <span className='me-1'>Visit</span>
                         <TbArrowUpRight />
-                      </>
+                      </a>
                     </MagicButton>
                   </MainContainer>
                 </div>
