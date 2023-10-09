@@ -159,11 +159,13 @@ function Body() {
           </div>
           <div className="footer p-3">
             <img src={image12} alt="Rectangle342381" className="noahcuadradocomhomepage1-rectangle34" />
-            <span>
-              <span>Designed by Noah Cuadrado - Developed by Demiterra</span>
-              <br />
-              <span>Copyright © 2023 by Noah Cuadrado. All Rights Reserved</span>
-            </span>
+            <div className='d-flex justify-content-center'>
+              <span className="text-center">
+                <span>Designed by Noah Cuadrado - Developed by Demiterra</span>
+                <br />
+                <span>Copyright © 2023 by Noah Cuadrado. All Rights Reserved</span>
+              </span>
+            </div>
           </div>
         </div>
       }
