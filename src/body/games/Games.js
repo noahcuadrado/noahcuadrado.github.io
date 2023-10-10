@@ -22,7 +22,7 @@ function Games()
     <div className="body p-3">
         <div className='row mb-5'>
             <div className='d-flex justify-content-center col-12 col-lg-6'>
-                <MainContainer className='w-50'>
+                <MainContainer className='w-100'>
                     <div className='text-center'>
                         <span className='big-text'>Night Mode 🌙</span>
                     </div>
@@ -35,7 +35,7 @@ function Games()
                 </MainContainer>
             </div>
             <div className='d-flex justify-content-center col-12 col-lg-6'>
-                <MainContainer className='w-50'>
+                <MainContainer className='w-100'>
                     <div className='text-center'>
                         <span className='big-text'><span className='color-yellow'>J</span>ust a Coin Awa<span className='color-pink'>y</span></span>
                     </div>
@@ -50,7 +50,7 @@ function Games()
         </div>
         <div className='row mb-5'>
             <div className='d-flex justify-content-center col-12 col-lg-6'>
-                <MainContainer className='w-50'>
+                <MainContainer className='w-100'>
                     <div className='text-center'>
                         <span className='big-text'>MADDI</span>
                     </div>
@@ -63,7 +63,7 @@ function Games()
                 </MainContainer>
             </div>
             <div className='d-flex justify-content-center col-12 col-lg-6'>
-                <MainContainer className='w-50'>
+                <MainContainer className='w-100'>
                     <div className='text-center'>
                         <span className='big-text'>Type.<span className='color-gray'>|</span></span>
                     </div>
@@ -78,7 +78,7 @@ function Games()
         </div>
         <div className='row mb-5'>
             <div className='d-flex justify-content-center col-12 col-lg-6'>
-                <MainContainer className='w-50'>
+                <MainContainer className='w-100'>
                     <div className='text-center'>
                         <span className='big-text'>Shape <span className='fw-bold'>48</span></span>
                     </div>
