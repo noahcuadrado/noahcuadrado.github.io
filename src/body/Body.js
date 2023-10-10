@@ -117,8 +117,7 @@ function Body() {
         </div>
       }
       {
-        !themeSelected &&
-        <div id="theme_selector" className={`theme_selector ${theme === "dark" ? "dark" : ""}`}>
+        <div id="theme_selector" className='dark d-none'>
           <div className="vertical_center">
             <div className="column column-1">
               <div className="flex">

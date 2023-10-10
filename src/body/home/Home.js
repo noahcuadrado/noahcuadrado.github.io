@@ -32,7 +32,7 @@ function Body()
                     <div className='image-container mt-4 mb-4 overflow-hidden'>
                         <img src={nightmode} alt="Night Mode" className="AAAAAAAAAAAAAHHHHHHHHH" />
                     </div>
-                    <div>
+                    <div className='d-flex align-items-center'>
                         <MagicButton type="animated" className="btn small-text p-3 me-3" onClick={() => openLink("/nightmode", true)}>Play the game!</MagicButton>
                         <MagicButton type="animated" className="btn small-text p-3" onClick={() => openLink("https://noahuxui.itch.io/night-mode")}>
                             <span className='me-1'>Visit</span>
@@ -65,41 +65,6 @@ function Body()
                         </MagicButton>
                     </MainContainer>
                 </div>
-            </div>
-        </div>
-        <div className='row mb-1'>
-            <div className='col'>
-                <MainContainer className=''>
-                    <div className='mid-text'>
-                        <span>Currently</span>
-                    </div>
-                    <div className='mid-text'>
-                        <span>Open to work</span>
-                    </div>
-                    <MagicButton type="animated" className="btn small-text p-3 mt-5" onClick={() => mailto()}>Open to work</MagicButton>
-                </MainContainer>
-            </div>
-            <div className='col'>
-                <MainContainer className=''>
-                    <div className='mid-text'>
-                        <span>Currently</span>
-                    </div>
-                    <div className='mid-text'>
-                        <span>Open to work</span>
-                    </div>
-                    <MagicButton type="animated" className="btn small-text p-3 mt-5" onClick={() => mailto()}>Open to work</MagicButton>
-                </MainContainer>
-            </div>
-            <div className='col'>
-                <MainContainer className=''>
-                    <div className='mid-text'>
-                        <span>Currently</span>
-                    </div>
-                    <div className='mid-text'>
-                        <span>Open to work</span>
-                    </div>
-                    <MagicButton type="animated" className="btn small-text p-3 mt-5" onClick={() => mailto()}>Open to work</MagicButton>
-                </MainContainer>
             </div>
         </div>
     </div>
