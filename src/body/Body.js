@@ -1,28 +1,27 @@
 import { React, useEffect, useState } from 'react';
-import MagicButton from '../juan/MagicButton.js';
-import MainContainer from './maincontainer/MainContainer.js';
-import { TbArrowUpRight } from "react-icons/tb";
+import {
+  Routes,
+  Route,
+  BrowserRouter
+} from "react-router-dom";
 
-//import all images from ../images/*
-/*
-import image1 from '../images/rectangle332388-bitn-300h.png';
-import image2 from '../images/rectangle332388-7ucr-300h.png';
-import image5 from '../images/rectangle332381-5byi-300h.png';
-import image6 from '../images/rectangle332381-f0v-300h.png';
-import image7 from '../images/rectangle332381-v2e-300h.png';
-import image8 from '../images/vector2381-fn8w.svg';
-import image9 from '../images/vector2381-nid.svg';
-import image10 from '../images/vector2381-nwwa.svg';
-import image11 from '../images/vector2381-twnr.svg';
-*/
+import MainContainer from './common/maincontainer/MainContainer.js';
+import Home from './home/Home.js';
+import Games from './games/Games.js';
+import Designs from './designs/Designs.js';
+
+import NightMode from './games_frames/nightmode/NightMode.js';
+import JustACoinAway from './games_frames/coinaway/JustACoinAway.js';
+import Maddi from './games_frames/maddi/Maddi.js';
+import Type from './games_frames/type/Type.js';
+import Shape48 from './games_frames/shape/Shape.js';
+
 import image12 from '../images/rectangle342381-zckf-200h.png';
-import nightmode from '../images/night_mode.png';
-
 import './Body.css';
-function Body() {
-  const [theme, setTheme] = useState("light");
-  const [themeSelected, setThemeSelected] = useState(false);
 
+function Body() {
+  const [theme, setTheme] = useState(getCookie('theme'));
+  const [themeSelected, setThemeSelected] = useState(false);
 
   function changeBackground(on) {
     if (on)
@@ -54,26 +53,19 @@ function Body() {
         return c.substring(name.length, c.length);
       }
     }
-    return "";
+    return "light";
   }
-
   useEffect(() => {
-    let theme = getCookie('theme');
-    if (theme !== undefined && theme !== "") {
-      //if(theme === "dark")
-      //  selectTheme(theme);
-
-      //TODO: activate back dark theme
+    let themec = getCookie('theme');
+    if (themec !== undefined && themec !== "") {
+      selectTheme(themec);
+    }else{
+      selectTheme("light");
     }
-    selectTheme("light");
     //eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-
-  function openLink(link) {
-    window.open(link, '_blank');
-  }
-
+  
 
   return (
     <>
@@ -83,84 +75,35 @@ function Body() {
             <MainContainer className="menu">
               <div className="row">
                 <div className="col-4 logo-text">
-                  noah cuadrado.
+                  <a href="/" className='btn btn-dark me-1 mid-text empty-button'>
+                    noah cuadrado.
+                  </a>
                 </div>
                 <div className="col-8">
                   <div className='d-flex flex-row-reverse'>
-                    <a className='btn btn-dark me-1 small-text empty-button' href="#">games.</a>
-                    <a className='btn btn-dark me-1 small-text empty-button' href="#">designs.</a>
-                    <a className='btn btn-dark me-1 small-text empty-button' href="#">contact.</a>
+                    <a className='btn btn-dark me-1 small-text empty-button' href="/games">games.</a>
+                    <a className='btn btn-dark me-1 small-text empty-button' href="/designs">designs.</a>
+                    <a className='btn btn-dark me-1 small-text empty-button' href='mailto:"noahcuadradosuarez@gmail.com"'>contact.</a>
                   </div>
                 </div>
               </div>
             </MainContainer>
           </div>
-          <div className="body p-3">
-            <div className='row mb-4'>
-              <div className='col-8'>
-                <MainContainer className='h-100'>
-                  <div className='mb-2'><span className='big-text'>My most recent project</span></div>
-                  <div><span className='small-text'>Night Mode 🌙</span></div>
-                  <div className='image-container mt-4 mb-4 overflow-hidden'>
-                    <img src={nightmode} alt="Night Mode" className="AAAAAAAAAAAAAHHHHHHHHH" />
-                  </div>
-                  <div>
-                    <MagicButton type="animated" className="btn small-text p-3 me-3" onClick={() => openLink("/nightmode")}>Play the game!</MagicButton>
-                    <MagicButton type="animated" className="btn small-text p-3" onClick={() => openLink("https://noahuxui.itch.io/night-mode")}>
-                      <span className='me-1'>Visit</span>
-                      <TbArrowUpRight />
-                    </MagicButton>
-                  </div>
-                </MainContainer>
-              </div>
-              <div className='col-4 mb-2'>
-                <div className='h-50 pb-3 mb-2'>
-                  <MainContainer className='h-100'>
-                    <div className='m-3'>
-                      <div className='big-text'><span>I am currently</span></div>
-                      <div className='mid-text'><span>Open to work</span></div>
-                      <MagicButton type="animated" className="btn small-text p-3 mt-5">Get in touch</MagicButton>
-                    </div>
-                  </MainContainer>
-                </div>
-                <div className='h-50 '>
-                  <MainContainer className='h-100'>
-                    <div className='big-text'><span>Looking for games?</span></div>
-                    <div className='mid-text'><span>Visit my itch.io!</span></div>
-                    <MagicButton type="animated" className="btn small-text p-3 mt-5" >
-                      <a href='https://noahuxui.itch.io' target='_blank'>
-                        <span className='me-1'>Visit</span>
-                        <TbArrowUpRight />
-                      </a>
-                    </MagicButton>
-                  </MainContainer>
-                </div>
-              </div>
-            </div>
-            <div className='row mb-1'>
-              <div className='col'>
-                <MainContainer className=''>
-                  <div className='mid-text'><span>Currently</span></div>
-                  <div className='mid-text'><span>Open to work</span></div>
-                  <MagicButton type="animated" className="btn small-text p-3 mt-5">Open to work</MagicButton>
-                </MainContainer>
-              </div>
-              <div className='col'>
-                <MainContainer className=''>
-                  <div className='mid-text'><span>Currently</span></div>
-                  <div className='mid-text'><span>Open to work</span></div>
-                  <MagicButton type="animated" className="btn small-text p-3 mt-5">Open to work</MagicButton>
-                </MainContainer>
-              </div>
-              <div className='col'>
-                <MainContainer className=''>
-                  <div className='mid-text'><span>Currently</span></div>
-                  <div className='mid-text'><span>Open to work</span></div>
-                  <MagicButton type="animated" className="btn small-text p-3 mt-5">Open to work</MagicButton>
-                </MainContainer>
-              </div>
-            </div>
-          </div>
+
+          <BrowserRouter>
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/designs" element={<Designs />} />
+              <Route path="/games" element={<Games />} />
+
+              <Route path="/nightmode" element={<NightMode />} />
+              <Route path="/coinaway" element={<JustACoinAway />} />
+              <Route path="/maddi" element={<Maddi />} />
+              <Route path="/type" element={<Type />} />
+              <Route path="/shape48" element={<Shape48 />} />
+            </Routes>
+          </BrowserRouter>
+
           <div className="footer p-3">
             <img src={image12} alt="Rectangle342381" className="noahcuadradocomhomepage1-rectangle34" />
             <div className='d-flex justify-content-center'>
