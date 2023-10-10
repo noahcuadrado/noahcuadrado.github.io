@@ -59,13 +59,13 @@ function Body() {
     let themec = getCookie('theme');
     if (themec !== undefined && themec !== "") {
       selectTheme(themec);
-    }else{
+    } else {
       selectTheme("light");
     }
     //eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  
+
 
   return (
     <>
@@ -79,7 +79,7 @@ function Body() {
                     noah cuadrado.
                   </a>
                 </div>
-                <div className="col-8">
+                <div className="col-8 p-2">
                   <div className='d-flex flex-row-reverse'>
                     <a className='btn btn-dark me-1 small-text empty-button' href="/games">games.</a>
                     <a className='btn btn-dark me-1 small-text empty-button' href="/designs">designs.</a>
