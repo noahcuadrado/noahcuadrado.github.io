@@ -74,12 +74,12 @@ function Body() {
           <div className="header p-3">
             <MainContainer className="menu">
               <div className="row">
-                <div className="col-4 logo-text">
+                <div className="col-12 col-md-6 logo-text">
                   <a href="/" className='btn btn-dark me-1 mid-text empty-button'>
                     noah cuadrado.
                   </a>
                 </div>
-                <div className="col-8 p-2">
+                <div className="col-12 col-md-6 p-2">
                   <div className='d-flex flex-row-reverse'>
                     <a className='btn btn-dark me-1 small-text empty-button' href="/games">games.</a>
                     <a className='btn btn-dark me-1 small-text empty-button' href="/designs">designs.</a>
@@ -105,7 +105,7 @@ function Body() {
           </BrowserRouter>
 
           <div className="footer p-3">
-            <img src={image12} alt="Rectangle342381" className="noahcuadradocomhomepage1-rectangle34" />
+            <img src={image12} alt="Rectangle342381" className="footer-separator" />
             <div className='d-flex justify-content-center'>
               <span className="text-center">
                 <span>Designed by Noah Cuadrado - Developed by Demiterra</span>

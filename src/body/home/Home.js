@@ -21,7 +21,7 @@ function Body()
   return (
     <div className="body p-3">
         <div className='row mb-4'>
-            <div className='col-8'>
+            <div className='col-12 col-lg-8 mb-4 mb-lg-0'>
                 <MainContainer className='h-100'>
                     <div className='mb-2'>
                         <span className='big-text'>My most recent project</span>
@@ -41,7 +41,7 @@ function Body()
                     </div>
                 </MainContainer>
             </div>
-            <div className='col-4 mb-2'>
+            <div className='col-12 col-lg-4 mb-2'>
                 <div className='h-50 pb-3 mb-2'>
                     <MainContainer className='h-100'>
                         <div className='m-3'>

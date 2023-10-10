@@ -20,8 +20,8 @@ function Games()
 
   return (
     <div className="body p-3">
-        <div className='row mb-5'>
-            <div className='d-flex justify-content-center col-12 col-lg-6'>
+        <div className='row mb-4'>
+            <div className='d-flex justify-content-center col-12 col-lg-6 mb-4 mb-lg-0'>
                 <MainContainer className='w-100'>
                     <div className='text-center'>
                         <span className='big-text'>Night Mode 🌙</span>
@@ -48,8 +48,8 @@ function Games()
                 </MainContainer>
             </div>
         </div>
-        <div className='row mb-5'>
-            <div className='d-flex justify-content-center col-12 col-lg-6'>
+        <div className='row mb-4'>
+            <div className='d-flex justify-content-center col-12 col-lg-6 mb-4 mb-lg-0'>
                 <MainContainer className='w-100'>
                     <div className='text-center'>
                         <span className='big-text'>MADDI</span>
@@ -76,7 +76,7 @@ function Games()
                 </MainContainer>
             </div>
         </div>
-        <div className='row mb-5'>
+        <div className='row mb-4'>
             <div className='d-flex justify-content-center col-12 col-lg-6'>
                 <MainContainer className='w-100'>
                     <div className='text-center'>
