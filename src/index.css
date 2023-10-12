@@ -50,7 +50,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   font-family: "AtkinsonHyperlegible-Bold";
-  transition: background-color 800ms;
 
   background-color: black;
 }
