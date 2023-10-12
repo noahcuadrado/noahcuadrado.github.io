@@ -1,0 +1,12 @@
+.color-gray{
+    color: #6A6A6A;
+}
+.color-yellow{
+    color: #FBE727;
+}
+.color-pink{
+    color: #F900BE;
+}
+.no-background{
+    background-color: transparent !important;
+}
