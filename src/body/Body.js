@@ -35,7 +35,7 @@ function Body() {
               <div className="col-12 col-md-6 p-2">
                 <div className='d-flex flex-row-reverse'>
                   <a className='btn btn-dark me-1 small-text empty-button' href="/games">games.</a>
-                  <a className='btn btn-dark me-1 small-text empty-button' href="/designs">designs.</a>
+                  <a className='btn btn-dark me-1 small-text empty-button' href="https://www.behance.net/noahcuadradodesign" target='_blank' rel="noreferrer">designs.</a>
                   <a className='btn btn-dark me-1 small-text empty-button' href='mailto:"noahcuadradosuarez@gmail.com"'>contact.</a>
                 </div>
               </div>
