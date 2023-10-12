@@ -33,7 +33,7 @@ function Body()
                         <img src={nightmode} alt="Night Mode" className="AAAAAAAAAAAAAHHHHHHHHH" />
                     </div>
                     <div className=''>
-                        <MagicButton type="animated" className="btn small-text p-3 me-3" onClick={() => openLink("/nightmode", true)}>Play the game!</MagicButton>
+                        <MagicButton type="animated" className="btn small-text p-3 me-3 mb-3 mb-lg-0" onClick={() => openLink("/nightmode", true)}>Play the game!</MagicButton>
                         <MagicButton type="animated" className="btn small-text p-3" onClick={() => openLink("https://noahuxui.itch.io/night-mode")}>
                             <span className='me-1'>Visit</span>
                             <TbArrowUpRight />
