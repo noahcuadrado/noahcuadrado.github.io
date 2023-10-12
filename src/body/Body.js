@@ -32,7 +32,7 @@ function Body() {
                   noah cuadrado.
                 </a>
               </div>
-              <div className="col-12 col-md-6 p-2">
+              <div className="col-12 col-md-6 p-3">
                 <div className='d-flex justify-content-end flex-wrap'>
                   <a className='btn btn-dark me-1 small-text empty-button' href="/games">games.</a>
                   <a className='btn btn-dark me-1 small-text empty-button' href="https://www.behance.net/noahcuadradodesign" target='_blank' rel="noreferrer">designs.</a>
