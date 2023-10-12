@@ -194,3 +194,21 @@ code {
   text-decoration: none;
 }
 
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb
+{
+    background: rgba(211, 211, 211, 0.493); /*barra del scroll*/
+    border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background: rgba(211, 211, 211, 0.808); /*barra del scroll*/
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track
+{
+    background: #2b2b2b; /*fondo del scroll*/
+}
