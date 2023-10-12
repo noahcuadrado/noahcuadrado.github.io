@@ -20,7 +20,7 @@ import image12 from '../images/rectangle342381-zckf-200h.png';
 import './Body.css';
 
 function Body() {
-  
+
   return (
     <>
       <div id="main_page" className="container">
@@ -28,7 +28,7 @@ function Body() {
           <MainContainer className="menu">
             <div className="row">
               <div className="col-12 col-md-6 logo-text">
-                <a href="/" className='btn btn-dark me-1 mid-text empty-button'>
+                <a href="/" className='btn btn-dark me-1 logo-text empty-button'>
                   noah cuadrado.
                 </a>
               </div>
