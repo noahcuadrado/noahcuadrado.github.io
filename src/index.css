@@ -52,7 +52,7 @@ body {
   font-family: "AtkinsonHyperlegible-Bold";
   transition: background-color 800ms;
 
-  background: #060606;
+  background-color: black;
 }
 
 code {
