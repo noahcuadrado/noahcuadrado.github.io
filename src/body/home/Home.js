@@ -43,10 +43,10 @@ function Body() {
                 <div className='col-12 col-lg-4 mb-2'>
                     <div className='h-50 pb-3 mb-2'>
                         <MainContainer className='h-100'>
-                            <div className='m-3'>
+                            <div className='m-2'>
                                 <div className='big-text'><span>I am currently</span></div>
-                                <div className='mid-text pt-4'><span>Open to work</span></div>
-                                <MagicButton type="animated" className="btn small-text p-3 mt-4" onClick={() => mailto()}>Get in touch</MagicButton>
+                                <div className='mid-text mt-4'><span>Open to work</span></div>
+                                <MagicButton type="animated" className="btn small-text p-3 mt-5" onClick={() => mailto()}>Get in touch</MagicButton>
                             </div>
                         </MainContainer>
                     </div>
@@ -55,10 +55,10 @@ function Body() {
                             <div className='big-text'>
                                 <span>Looking for games?</span>
                             </div>
-                            <div className='mid-text pt-4'>
+                            <div className='mid-text mt-4'>
                                 <span>Visit my itch.io!</span>
                             </div>
-                            <MagicButton type="animated" className="btn small-text p-3 mt-4" onClick={() => openLink("https://noahuxui.itch.io")}>
+                            <MagicButton type="animated" className="btn small-text p-3 mt-5" onClick={() => openLink("https://noahuxui.itch.io")}>
                                 <span className='me-1'>Visit</span>
                                 <TbArrowUpRight />
                             </MagicButton>
