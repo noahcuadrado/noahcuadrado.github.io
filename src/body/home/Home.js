@@ -12,7 +12,7 @@ function Body() {
             window.open(link, '_blank');
     }
 
-    //function mailto links to 'mailto:"noahcuadradosuarez@gmail.com"'
+    //function mailto links to 'mailto:"noahcuadradosuarez@gmail.com"' //<MagicButton type="animated" className="btn small-text p-3 me-3 mb-3 mb-lg-0" onClick={() => openLink("/nightmode", true)}>Play the game!</MagicButton>//
     function mailto() {
         window.location.href = 'mailto:"noahcuadradosuarez@gmail.com"';
     }
@@ -32,7 +32,6 @@ function Body() {
                             <img src={nightmode} alt="Night Mode" className="AAAAAAAAAAAAAHHHHHHHHH" />
                         </div>
                         <div className='pt-5'>
-                            <MagicButton type="animated" className="btn small-text p-3 me-3 mb-3 mb-lg-0" onClick={() => openLink("/nightmode", true)}>Play the game!</MagicButton>
                             <MagicButton type="animated" className="btn small-text p-3" onClick={() => openLink("https://play.google.com/store/apps/details?id=com.noahcuadrado.nightmode")}>
                                 <span className='me-1'>Visit</span>
                                 <TbArrowUpRight />
