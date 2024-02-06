@@ -33,7 +33,7 @@ function Body() {
                         </div>
                         <div className='pt-5'>
                             <MagicButton type="animated" className="btn small-text p-3 me-3 mb-3 mb-lg-0" onClick={() => openLink("/nightmode", true)}>Play the game!</MagicButton>
-                            <MagicButton type="animated" className="btn small-text p-3" onClick={() => openLink("https://noahuxui.itch.io/night-mode")}>
+                            <MagicButton type="animated" className="btn small-text p-3" onClick={() => openLink("https://play.google.com/store/apps/details?id=com.noahcuadrado.nightmode")}>
                                 <span className='me-1'>Visit</span>
                                 <TbArrowUpRight />
                             </MagicButton>
