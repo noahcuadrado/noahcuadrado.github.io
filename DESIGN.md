@@ -32,7 +32,7 @@ This file records the visual direction already present in the approved local por
 - Whitespace separates claims from evidence and keeps the case studies scannable.
 - The reliability evidence block uses an asymmetric text layout and source note so one concrete failure anchors the broader recovery principles.
 - The Quick Edit composite uses one shared workspace state and a compact three-step annotation rail. This keeps selection, request context and live draft inspection connected while recovery remains in its own evidence block.
-- The Ada Builder case uses real branch UI captured against an isolated local worktree. A wide canvas view and a tight Project Guide crop keep product structure and repository evidence legible without exposing customer data.
+- The Ada Studio case uses the real embedded workspace UI with local test data. Two wide, uncropped captures show the multi-version canvas and the focused Draft/Live, Landing/App review state without exposing customer content.
 - Implementation disclosure sits in About as supporting context instead of competing with product evidence.
 - The Night Mode case pairs released cover art with an explicitly labeled interaction diagram using the game's original 3 by 3 grid. Public results, comments and follow-up evidence stay separate from undocumented design rationale.
 - The arrow marks links that leave the portfolio, separating external destinations from internal section jumps.

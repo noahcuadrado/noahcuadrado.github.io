@@ -5,8 +5,8 @@ import engagementCover from '../images/engagement-cover.webp';
 import colourCover from '../images/colour-cover.webp';
 import nightModeCover from '../images/night_mode_square.png';
 import t3CodeLogo from '../images/t3-code-logo.svg';
-import adaBuilderCanvas from '../images/ada-builder-canvas.png';
-import adaBuilderProjectGuide from '../images/ada-builder-project-guide.png';
+import adaStudioCanvas from '../images/ada-studio-canvas.png';
+import adaStudioFocusPreview from '../images/ada-studio-focus-preview.png';
 
 const proofPoints = [
   ['AI-agent UX', 'Making agent actions visible, inspectable and steerable.'],
@@ -156,22 +156,22 @@ function NightModeLoop() {
   );
 }
 
-function AdaBuilderVisual() {
+function AdaStudioVisual() {
   return (
-    <div className="ada-visual" aria-label="Ada Builder branch captures">
+    <div className="ada-visual" aria-label="Ada Studio embedded workspace captures">
       <figure className="ada-shot ada-shot-primary">
         <img
-          src={adaBuilderCanvas}
-          alt="Ada Builder canvas showing a local workspace, lifecycle lenses and one available version"
+          src={adaStudioCanvas}
+          alt="Ada Studio embedded in an Audos workspace, showing several working versions on one canvas"
         />
-        <figcaption><span>Canvas and lifecycle lenses</span><small>Real branch UI · isolated local worktree</small></figcaption>
+        <figcaption><span>Several versions, one workspace</span><small>Embedded Ada Studio canvas</small></figcaption>
       </figure>
       <figure className="ada-shot ada-shot-secondary">
         <img
-          src={adaBuilderProjectGuide}
-          alt="Ada Builder Project Guide showing repository evidence, commands and tooling"
+          src={adaStudioFocusPreview}
+          alt="Focused Ada Studio preview with Draft and Live state controls and Landing and App surface controls"
         />
-        <figcaption><span>Project Guide</span><small>Read-only analysis · isolated local worktree</small></figcaption>
+        <figcaption><span>Focused preview review</span><small>Draft / Live · Landing / App</small></figcaption>
       </figure>
     </div>
   );
@@ -220,10 +220,9 @@ function AttributionNote() {
     <aside className="attribution-note">
       <span>Foundation credit</span>
       <p>
-        Audos Code adapts the open-source T3 Code project for an embedded Audos workflow. Quick Edit is
-        a workflow inside Audos Code, so the next section is a deep dive rather than a separate product.
-        Ada Builder is a different T3 Code-based prototype and appears as a separate case below.
-        These sections cover Audos-specific work and do not claim ownership of T3 Code.
+        Audos Code adapts T3 Code for the Audos workspace. Quick Edit is an Audos Code interaction shown
+        in the next section. Ada Studio is the newer embedded workspace experience on that same foundation
+        and appears as Case 02. These sections cover Audos-specific work and do not claim ownership of T3 Code.
       </p>
     </aside>
   );
@@ -375,65 +374,64 @@ function Body() {
         </section>
 
         <section className="case-study ada-builder-case" id="ada-builder" aria-labelledby="ada-builder-title">
-          <div className="section-label"><span>Case study 02</span><span>Working prototype · adapted from T3 Code</span></div>
+          <div className="section-label"><span>Case study 02</span><span>Embedded workspace prototype · T3 Code foundation</span></div>
           <div className="case-heading">
             <div>
-              <p className="eyebrow">Ada Builder · 2026</p>
-              <h2 id="ada-builder-title">A visual workspace over the agent work already in T3 Code.</h2>
+              <p className="eyebrow">Ada Studio · 2026</p>
+              <h2 id="ada-builder-title">Keep several working versions visible, then focus on one.</h2>
             </div>
             <p className="case-summary">
-              Ada Builder is a separate local prototype. It keeps T3 Code's project, thread, worktree
-              and preview models, then arranges versions on a spatial canvas with lifecycle lenses and
-              a repository-aware Project Guide.
+              Ada Studio sits inside an Audos workspace. Its canvas keeps several working versions visible
+              at once. Opening a version moves into a focused review with two explicit choices: Draft or Live,
+              and Landing or App.
             </p>
           </div>
 
           <aside className="prototype-note">
-            <span>Foundation and scope</span>
+            <span>Current scope</span>
             <p>
-              The prototype is a fork of T3 Code, not a from-scratch product. The captures below show
-              actual Ada Builder branch UI running against an isolated local worktree. They contain no
-              customer workspace content.
+              Ada Studio extends the existing Audos Code editor, whose foundation is T3 Code. The captures
+              show the embedded workspace experience with local test data. They do not claim ownership of T3 Code.
             </p>
           </aside>
 
-          <AdaBuilderVisual />
+          <AdaStudioVisual />
 
           <div className="case-context">
             <article>
-              <span className="context-label">The prototype question</span>
+              <span className="context-label">The design question</span>
               <p>
-                Can projects and agent threads become a navigable visual workspace without inventing a
-                second backend or hiding what the system actually knows?
+                How can people keep several versions in view, then inspect one without losing which state
+                and workspace surface they are reviewing?
               </p>
             </article>
             <dl>
               <div><dt>Role</dt><dd>Product design and AI-assisted implementation</dd></div>
-              <div><dt>Foundation</dt><dd>T3 Code fork</dd></div>
-              <div><dt>State</dt><dd>Local working prototype</dd></div>
-              <div><dt>Capture</dt><dd>Isolated local worktree</dd></div>
+              <div><dt>Foundation</dt><dd>Audos Code on T3 Code</dd></div>
+              <div><dt>State</dt><dd>Embedded working prototype</dd></div>
+              <div><dt>Capture</dt><dd>Local Audos test workspace</dd></div>
             </dl>
           </div>
 
           <div className="ada-decisions">
-            <article><span>01</span><h3>Spatial, not separate</h3><p>The canvas adapts existing T3 read models and keeps the standard view within reach.</p></article>
-            <article><span>02</span><h3>Density follows zoom</h3><p>Overview, near and focus states reveal more detail without changing the underlying project.</p></article>
-            <article><span>03</span><h3>Unknown stays unknown</h3><p>Missing repository, branch, worktree or preview metadata remains visibly unavailable.</p></article>
-            <article><span>04</span><h3>Consent before execution</h3><p>The Project Guide shows the exact command, folder, port and risks before asking to run a preview.</p></article>
+            <article><span>01</span><h3>Versions stay visible</h3><p>The canvas gives each working version its own place inside the workspace.</p></article>
+            <article><span>02</span><h3>Focus without losing context</h3><p>Opening a version moves from overview to a dedicated review surface.</p></article>
+            <article><span>03</span><h3>State is explicit</h3><p>Draft and Live keep the working version separate from the published state.</p></article>
+            <article><span>04</span><h3>Surface is explicit</h3><p>Landing and App make the current preview target visible before review.</p></article>
           </div>
 
           <aside className="ada-verification">
             <div>
-              <span className="context-label">Local verification</span>
-              <strong>Branch UI rendered</strong>
-              <p>The canvas and Project Guide were checked locally from the separate Ada Builder fork.</p>
+              <span className="context-label">Interface verification</span>
+              <strong>Embedded flow rendered</strong>
+              <p>The captures show the multi-version canvas and a focused preview inside an Audos workspace.</p>
             </div>
             <div>
               <span className="context-label">Evidence boundary</span>
               <p>
-                The captures show real React UI over an isolated local worktree. They support a working
-                prototype claim, not users, deployment, adoption, time saved or other outcome metrics.
-                Quick Edit and Cerebras belong to Audos Code, not this case.
+                They support the interface and state-model claims above. They do not establish users,
+                deployment scale, adoption, time saved or business outcomes. This case covers canvas and
+                preview review; Quick Edit evidence remains in Case 01.
               </p>
             </div>
           </aside>
@@ -547,7 +545,7 @@ function Body() {
               My background includes product design, game UX, accessible component systems and behavioral
               analysis. I stay close to implementation because system state, edge cases and recovery are
               part of the design. I use coding agents extensively for React, TypeScript and Node changes.
-              Audos Code and Ada Builder credit T3 Code as their foundation.
+              Audos Code, including Ada Studio, credits T3 Code as its foundation.
             </p>
             <div className="timeline" aria-label="Experience timeline">
               <div><time>2025 to present</time><span><strong>Audos</strong>Product Designer</span></div>
