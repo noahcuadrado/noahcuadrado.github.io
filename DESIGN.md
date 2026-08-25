@@ -18,6 +18,7 @@ This file records the visual direction already present in the approved local por
 - Warm off-white and near-black form the base because they make long case-study copy readable.
 - Lime is the primary accent because it creates one memorable focal point against the neutral base.
 - Coral, violet and blue appear only on the earlier-work archive to distinguish project types.
+- Night Mode uses its released game's deep blue, cream and peach inside that case only. The shift marks a separate shipped project while preserving the portfolio's typography and evidence hierarchy.
 
 ## Typography
 
@@ -30,6 +31,8 @@ This file records the visual direction already present in the approved local por
 - Cards are used only when the content is genuinely repeatable, such as workflow steps, principles and archived projects.
 - Whitespace separates claims from evidence and keeps the case studies scannable.
 - The reliability evidence block uses an asymmetric text layout and source note so one concrete failure anchors the broader recovery principles.
+- The Ada Builder case reconstructs the tested canvas and Project Guide as one product diagram. It keeps foundation credit, supported behavior, verification and missing outcomes visible in the same section.
+- The Night Mode case pairs released cover art with an explicitly labeled interaction diagram. Public results, comments and follow-up evidence stay separate from undocumented design rationale.
 - The arrow marks links that leave the portfolio, separating external destinations from internal section jumps.
 
 ## Motion

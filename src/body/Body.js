@@ -43,14 +43,6 @@ const selectedWork = [
     href: 'https://www.behance.net/gallery/151475565/TCS-Design-System-2-Buttons',
     color: 'blue',
   },
-  {
-    type: 'Game UX',
-    title: 'Night Mode',
-    description: 'A solo game project recognized with an honorable mention at Indie Spain Jam 2023.',
-    href: 'https://noahuxui.itch.io/night-mode',
-    color: 'lime',
-    image: nightModeCover,
-  },
 ];
 
 function Arrow() {
@@ -135,6 +127,87 @@ function BuilderWorkflow() {
   );
 }
 
+function NightModeLoop() {
+  const cells = Array.from({ length: 20 }, (_, index) => index);
+  const steps = ['Scan the grid', 'Spot the change', 'Pick it', 'Replay or rank'];
+
+  return (
+    <div className="night-mode-visual">
+      <figure className="night-cover">
+        <img src={nightModeCover} alt="Night Mode game cover with a crescent moon on a deep blue background" />
+        <figcaption>
+          <span>Released game</span>
+          <span>Original art · credited third-party music</span>
+        </figcaption>
+      </figure>
+
+      <div className="night-loop">
+        <div className="night-loop-heading">
+          <span className="context-label">Released interaction</span>
+          <h3>One input keeps the loop immediate.</h3>
+          <p>Interaction diagram based on the published web game, not a process artifact.</p>
+        </div>
+        <div className="night-grid" aria-hidden="true">
+          {cells.map((cell) => <i className={cell === 13 ? 'changed' : ''} key={cell} />)}
+          <span>Pick</span>
+        </div>
+        <ol className="night-loop-steps">
+          {steps.map((step, index) => (
+            <li key={step}><span>0{index + 1}</span>{step}</li>
+          ))}
+        </ol>
+      </div>
+    </div>
+  );
+}
+
+function AdaBuilderVisual() {
+  const projectCards = [
+    ['Thread', 'Working'],
+    ['Thread', 'Preview'],
+    ['Thread', 'Available'],
+  ];
+
+  return (
+    <div className="ada-visual">
+      <div className="ada-canvas" aria-hidden="true">
+        <div className="ada-canvas-meta"><span>Canvas overview</span><span>Semantic zoom</span></div>
+        <div className="ada-project-cluster ada-project-primary">
+          <div className="ada-project-name"><i />Project folder</div>
+          <div className="ada-thread-row">
+            {projectCards.map(([name, state], index) => (
+              <div className={index === 0 ? 'ada-thread active' : 'ada-thread'} key={`${name}-${state}`}>
+                <span>{name}</span><b>{state}</b><i />
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="ada-project-cluster ada-project-secondary"><span>Project folder</span><i /><i /></div>
+        <div className="ada-project-cluster ada-project-tertiary"><span>Project folder</span><i /><i /><i /></div>
+        <div className="ada-canvas-controls"><span>Search</span><span>Fit all</span><span>List</span></div>
+      </div>
+
+      <div className="ada-guide">
+        <div className="ada-guide-bar"><span>Project Guide</span><span>Read-only scan</span></div>
+        <div className="ada-guide-copy">
+          <span className="context-label">Repository evidence</span>
+          <h3>Show what the guide found before it runs anything.</h3>
+        </div>
+        <div className="ada-guide-signals">
+          <div><span>Tooling</span><b>Evidence + confidence</b></div>
+          <div><span>Start and checks</span><b>Evidence + confidence</b></div>
+          <div><span>Ports and environment</span><b>Evidence + confidence</b></div>
+          <div><span>Deployment signals</span><b>Evidence + confidence</b></div>
+        </div>
+        <div className="ada-guide-consent">
+          <span>Preview command</span>
+          <strong>Exact consent required</strong>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function AudosCodeMap() {
   const additions = [
     ['Embedded workflow', 'Launch and continue inside the Audos workspace.'],
@@ -178,10 +251,10 @@ function AttributionNote() {
     <aside className="attribution-note">
       <span>Foundation credit</span>
       <p>
-        Audos Code adapts the open-source T3 Code project for an embedded Audos workflow. Ada is the
-        workspace-editing agent inside Audos Code. The second section is a workflow deep dive, not a
-        separate product or fork. These sections cover the Audos-specific product and interaction work.
-        They do not claim ownership of T3 Code.
+        Audos Code adapts the open-source T3 Code project for an embedded Audos workflow. Quick Edit is
+        a workflow inside Audos Code, so the next section is a deep dive rather than a separate product.
+        Ada Builder is a different T3 Code-based prototype and appears as a separate case below.
+        These sections cover Audos-specific work and do not claim ownership of T3 Code.
       </p>
     </aside>
   );
@@ -262,12 +335,12 @@ function Body() {
           </div>
         </section>
 
-        <section className="case-study case-study-alt" id="ada-builder" aria-labelledby="ada-title">
+        <section className="case-study case-study-alt" id="quick-edit" aria-labelledby="quick-edit-title">
           <div className="section-label"><span>Interaction deep dive</span><span>Workflow within Audos Code</span></div>
           <div className="case-heading">
             <div>
               <p className="eyebrow">Quick Edit workflow · Audos Code · 2026</p>
-              <h2 id="ada-title">Target a UI element, request a change and inspect the draft.</h2>
+              <h2 id="quick-edit-title">Target a UI element, request a change and inspect the draft.</h2>
             </div>
             <p className="case-summary">
               Quick Edit carried selected-element context into a dedicated GLM 4.7 route on Cerebras
@@ -343,10 +416,148 @@ function Body() {
           </aside>
         </section>
 
+        <section className="case-study ada-builder-case" id="ada-builder" aria-labelledby="ada-builder-title">
+          <div className="section-label"><span>Case study 02</span><span>Working prototype · adapted from T3 Code</span></div>
+          <div className="case-heading">
+            <div>
+              <p className="eyebrow">Ada Builder · 2026</p>
+              <h2 id="ada-builder-title">A visual workspace over the agent work already in T3 Code.</h2>
+            </div>
+            <p className="case-summary">
+              Ada Builder is a separate local prototype. It keeps T3 Code's project, thread, worktree
+              and preview models, then presents them as a spatial canvas with a repository-aware Project Guide.
+            </p>
+          </div>
+
+          <aside className="prototype-note">
+            <span>Foundation and scope</span>
+            <p>
+              The prototype is a fork of T3 Code, not a from-scratch product. Its current canvas is a
+              read-only presentation over T3's existing data model. Unsupported lifecycle actions are
+              absent rather than simulated.
+            </p>
+          </aside>
+
+          <AdaBuilderVisual />
+
+          <div className="case-context">
+            <article>
+              <span className="context-label">The prototype question</span>
+              <p>
+                Can projects and agent threads become a navigable visual workspace without inventing a
+                second backend or hiding what the system actually knows?
+              </p>
+            </article>
+            <dl>
+              <div><dt>Role</dt><dd>Product design and AI-assisted implementation</dd></div>
+              <div><dt>Foundation</dt><dd>T3 Code fork</dd></div>
+              <div><dt>State</dt><dd>Local working prototype</dd></div>
+              <div><dt>Use</dt><dd>No user or deployment claim</dd></div>
+            </dl>
+          </div>
+
+          <div className="ada-decisions">
+            <article><span>01</span><h3>Spatial, not separate</h3><p>The canvas adapts existing T3 read models and keeps the standard view within reach.</p></article>
+            <article><span>02</span><h3>Density follows zoom</h3><p>Overview, near and focus states reveal more detail without changing the underlying project.</p></article>
+            <article><span>03</span><h3>Unknown stays unknown</h3><p>Missing repository, branch, worktree or preview metadata remains visibly unavailable.</p></article>
+            <article><span>04</span><h3>Consent before execution</h3><p>The Project Guide analyzes a bounded file set first, then asks before starting a preview.</p></article>
+          </div>
+
+          <aside className="ada-verification">
+            <div>
+              <span className="context-label">Local verification</span>
+              <strong>58 focused tests passed</strong>
+              <p>Canvas layout, data adaptation, evidence collection, profile verification and Project Guide behavior.</p>
+            </div>
+            <div>
+              <span className="context-label">Evidence boundary</span>
+              <p>
+                The current branch supports a working prototype claim. It does not support users,
+                deployment, adoption, time saved or other outcome metrics. Quick Edit and Cerebras
+                belong to Audos Code, not this case.
+              </p>
+            </div>
+          </aside>
+        </section>
+
+        <section className="case-study night-mode-case" id="night-mode" aria-labelledby="night-mode-title">
+          <div className="section-label"><span>Case study 03</span><span>Solo release · Unity · 2023 to 2024</span></div>
+          <div className="case-heading">
+            <div>
+              <p className="eyebrow">Night Mode · Indie Spain Jam 2023</p>
+              <h2 id="night-mode-title">A one-button game built around visual perception and replay.</h2>
+            </div>
+            <p className="case-summary">
+              Created solo in Unity during a week-long jam, then released on the web. Night Mode received
+              an honorable mention and later got an Android follow-up.
+            </p>
+          </div>
+
+          <NightModeLoop />
+
+          <div className="case-context night-context">
+            <article>
+              <span className="context-label">Released constraint</span>
+              <p>
+                Build an original solo entry in one week, with a visual-perception loop that works with
+                one input on keyboard and touch.
+              </p>
+            </article>
+            <dl>
+              <div><dt>Role</dt><dd>Solo creator</dd></div>
+              <div><dt>Engine</dt><dd>Unity</dd></div>
+              <div><dt>Release</dt><dd>Web, then Android follow-up</dd></div>
+              <div><dt>Access</dt><dd>One button, tutorial and color-blind-friendly label</dd></div>
+            </dl>
+          </div>
+
+          <div className="night-evidence">
+            <div className="night-results">
+              <span className="context-label">Official jam results</span>
+              <div className="night-result-grid">
+                <article><strong>Honorable mention</strong><span>Indie Spain Jam 2023</span></article>
+                <article><strong>#16</strong><span>Mechanics</span></article>
+                <article><strong>#33</strong><span>Overall</span></article>
+                <article><strong>101</strong><span>Jam ratings · 176 entries</span></article>
+              </div>
+            </div>
+            <div className="night-feedback">
+              <span className="context-label">What the public record shows</span>
+              <h3>Comments praised quick replay and flagged one color ambiguity.</h3>
+              <p>
+                Several public comments praised the quick restart and leaderboard competition. One jam
+                commenter was unsure which color could be selected. These are public comments, not formal research.
+              </p>
+            </div>
+          </div>
+
+          <div className="night-followup">
+            <div>
+              <span className="context-label">After the jam</span>
+              <h3>The leaderboard passed 100 score submissions. An Android release followed.</h3>
+            </div>
+            <div className="night-followup-copy">
+              <p>
+                The public leaderboard received more than 100 score submissions. A January 2024 update
+                announced an Android version with a new mode, performance work and other features.
+              </p>
+              <p className="night-boundary">
+                Evidence boundary: public release pages, jam results and comments support this case. No
+                local source archive, early design files or analytics export were found. Score submissions
+                are not presented as unique users, and the Android work is not attributed to a specific comment.
+              </p>
+              <div className="night-links">
+                <a href="https://noahuxui.itch.io/night-mode" target="_blank" rel="noreferrer">Play Night Mode <Arrow /></a>
+                <a href="https://itch.io/jam/indie-spain-jam-23/rate/2272825" target="_blank" rel="noreferrer">View official jam entry <Arrow /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="selected-work" aria-labelledby="selected-title">
           <div className="section-label"><span>Selected earlier work</span></div>
           <div className="selected-heading">
-            <h2 id="selected-title">Product UX, accessible systems and a solo game.</h2>
+            <h2 id="selected-title">Product UX and accessible systems.</h2>
             <p>Public work from before Audos. Each project opens on its original portfolio page.</p>
           </div>
           <div className="work-grid">
