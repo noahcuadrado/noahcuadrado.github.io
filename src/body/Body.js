@@ -220,9 +220,8 @@ function AttributionNote() {
     <aside className="attribution-note">
       <span>Foundation credit</span>
       <p>
-        Audos Code adapts T3 Code for the Audos workspace. Quick Edit is an Audos Code interaction shown
-        in the next section. Ada Studio is the newer embedded workspace experience on that same foundation
-        and appears as Case 02. These sections cover Audos-specific work and do not claim ownership of T3 Code.
+        I was the sole contributor to Audos Code and Ada Studio. Both prototypes build on T3 Code,
+        credited here as their open-source foundation. Quick Edit is an Audos Code workflow shown in the next section.
       </p>
     </aside>
   );
@@ -234,7 +233,6 @@ function Body() {
       <a className="skip-link" href="#main-content">Skip to content</a>
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="Noah Cuadrado, home">
-          <span>NC</span>
           <strong>Noah Cuadrado</strong>
         </a>
         <nav aria-label="Primary navigation">
@@ -295,7 +293,7 @@ function Body() {
               </p>
             </article>
             <dl>
-              <div><dt>Role</dt><dd>Product Designer</dd></div>
+              <div><dt>Role</dt><dd>Sole contributor · Product design and AI-assisted implementation</dd></div>
               <div><dt>Focus</dt><dd>Embedded editing, preview and recovery</dd></div>
               <div><dt>Foundation</dt><dd>T3 Code fork</dd></div>
               <div><dt>Use</dt><dd>Small beta group</dd></div>
@@ -328,7 +326,7 @@ function Body() {
               </p>
             </article>
             <dl>
-              <div><dt>Role</dt><dd>Product Designer</dd></div>
+              <div><dt>Role</dt><dd>Sole contributor · Product design and AI-assisted implementation</dd></div>
               <div><dt>Focus</dt><dd>Element targeting and draft inspection</dd></div>
               <div><dt>Environment</dt><dd>Audos Code · Web</dd></div>
               <div><dt>Evidence</dt><dd>Reconstructed from repository history</dd></div>
@@ -390,8 +388,8 @@ function Body() {
           <aside className="prototype-note">
             <span>Current scope</span>
             <p>
-              Ada Studio extends the existing Audos Code editor, whose foundation is T3 Code. The captures
-              show the embedded workspace experience with local test data. They do not claim ownership of T3 Code.
+              Ada Studio extends Audos Code on the T3 Code foundation. The captures show the embedded
+              workspace experience with local test data.
             </p>
           </aside>
 
@@ -406,7 +404,7 @@ function Body() {
               </p>
             </article>
             <dl>
-              <div><dt>Role</dt><dd>Product design and AI-assisted implementation</dd></div>
+              <div><dt>Role</dt><dd>Sole contributor · Product design and AI-assisted implementation</dd></div>
               <div><dt>Foundation</dt><dd>Audos Code on T3 Code</dd></div>
               <div><dt>State</dt><dd>Embedded working prototype</dd></div>
               <div><dt>Capture</dt><dd>Local Audos test workspace</dd></div>
@@ -545,7 +543,7 @@ function Body() {
               My background includes product design, game UX, accessible component systems and behavioral
               analysis. I stay close to implementation because system state, edge cases and recovery are
               part of the design. I use coding agents extensively for React, TypeScript and Node changes.
-              Audos Code, including Ada Studio, credits T3 Code as its foundation.
+              I was the sole contributor to Audos Code and Ada Studio. Both credit T3 Code as their foundation.
             </p>
             <div className="timeline" aria-label="Experience timeline">
               <div><time>2025 to present</time><span><strong>Audos</strong>Product Designer</span></div>

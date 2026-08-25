@@ -11,7 +11,7 @@ This file records the visual direction already present in the approved local por
 ## Audience
 
 - Product-design recruiters and hiring managers at AI, developer-tool and complex-workflow companies.
-- Readers should understand the product problem, Noah's role, the open-source foundation and the evidence boundary without decoding internal terminology.
+- Readers should understand the product problem, Noah's sole-contributor role, the open-source foundation and the evidence boundary without decoding internal terminology.
 
 ## Palette
 
@@ -23,11 +23,13 @@ This file records the visual direction already present in the approved local por
 ## Typography
 
 - Atkinson Hyperlegible is the sole type family. Its accessible letterforms support the portfolio's emphasis on legibility while giving the page a recognizable voice.
+- The header uses Noah's name as its wordmark. A typographic signature keeps attention on the work without inventing a separate monogram.
 - Large headlines establish the editorial hierarchy. Small labels identify evidence, status and scope.
 
 ## Composition
 
 - Wide editorial sections and varied grids match the different evidence in each case study.
+- The T3 Code foundation card is vertically centered against the Audos-specific grid so the source and its downstream work read as one relationship.
 - Cards are used only when the content is genuinely repeatable, such as workflow steps, principles and archived projects.
 - Whitespace separates claims from evidence and keeps the case studies scannable.
 - The reliability evidence block uses an asymmetric text layout and source note so one concrete failure anchors the broader recovery principles.
