@@ -1,6 +1,6 @@
 {
-  "short_name": "noah cuadrado.",
-  "name": "noah cuadrado.",
+  "short_name": "Noah Cuadrado",
+  "name": "Noah Cuadrado | Product Designer",
   "icons": [
     {
       "src": "favicon.png",
@@ -10,6 +10,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#f3f1e9",
+  "background_color": "#f3f1e9"
 }
