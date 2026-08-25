@@ -4,6 +4,9 @@ import './Body.css';
 import engagementCover from '../images/engagement-cover.webp';
 import colourCover from '../images/colour-cover.webp';
 import nightModeCover from '../images/night_mode_square.png';
+import t3CodeLogo from '../images/t3-code-logo.svg';
+import adaBuilderCanvas from '../images/ada-builder-canvas.png';
+import adaBuilderProjectGuide from '../images/ada-builder-project-guide.png';
 
 const proofPoints = [
   ['AI-agent UX', 'Making agent actions visible, inspectable and steerable.'],
@@ -67,68 +70,60 @@ function BuilderWorkflow() {
   return (
     <div className="workflow-visual">
       <div className="visual-meta">
-        <span>Interaction composite</span>
-        <span>Quick Edit · Audos Code</span>
+        <span>Interaction reconstruction · Quick Edit 0.3.0</span>
+        <span>Based on repository history</span>
       </div>
-      <div className="workflow-grid">
-        <article className="workflow-step">
-          <span className="step-index">01</span>
-          <div className="mock-browser" aria-hidden="true">
-            <div className="mock-browser-bar"><i /><i /><i /></div>
-            <div className="mock-page">
-              <div className="mock-nav" />
-              <div className="mock-heading" />
-              <div className="mock-copy" />
-              <div className="mock-target"><span>Select target</span></div>
-              <div className="mock-cards"><i /><i /><i /></div>
+      <div className="workflow-composite">
+        <div className="workflow-product" aria-hidden="true">
+          <div className="workflow-toolbar">
+            <span>Audos Code</span>
+            <div><i />Draft preview</div>
+            <b>Quick Edit</b>
+          </div>
+          <div className="workflow-workspace">
+            <div className="workflow-page">
+              <span className="workflow-page-label">Workspace preview</span>
+              <i className="workflow-page-nav" />
+              <i className="workflow-page-title" />
+              <i className="workflow-page-copy" />
+              <div className="workflow-target">
+                <span>button.primary-cta</span>
+                Start building
+              </div>
+              <div className="workflow-page-cards"><i /><i /><i /></div>
+            </div>
+            <div className="workflow-prompt">
+              <div className="workflow-prompt-context">
+                <span>Selected element</span>
+                <b>button.primary-cta</b>
+              </div>
+              <p>Make this action clearer and easier to notice.</p>
+              <div className="workflow-prompt-footer"><span>Preview in context</span><b>Send ↑</b></div>
             </div>
           </div>
-          <h3>Select the target</h3>
-          <p>Select the exact interface element.</p>
-        </article>
+        </div>
 
-        <article className="workflow-step">
-          <span className="step-index">02</span>
-          <div className="mock-prompt" aria-hidden="true">
-            <span className="prompt-context">Button · Hero</span>
-            <p>Make this action clearer and easier to notice.</p>
-            <div className="prompt-footer"><span>Ready</span><b>Send ↑</b></div>
-          </div>
-          <h3>Ask with context</h3>
-          <p>The request carries the selected target.</p>
-        </article>
-
-        <article className="workflow-step">
-          <span className="step-index">03</span>
-          <div className="mock-preview" aria-hidden="true">
-            <div className="preview-toolbar"><span>Live draft</span><b>Updated</b></div>
-            <div className="preview-body">
-              <i className="preview-title" />
-              <i className="preview-copy" />
-              <span>Primary action</span>
-            </div>
-          </div>
-          <h3>Inspect the result</h3>
-          <p>See the draft change in context.</p>
-        </article>
-
-        <article className="workflow-step">
-          <span className="step-index">04</span>
-          <div className="mock-checks" aria-hidden="true">
-            <div><i className="pass">✓</i><span>Preview available</span></div>
-            <div><i className="pass">✓</i><span>Edit status visible</span></div>
-            <div><i className="pending">↻</i><span>Recover if interrupted</span></div>
-          </div>
-          <h3>Test or recover</h3>
-          <p>Keep progress visible and recoverable.</p>
-        </article>
+        <ol className="workflow-notes">
+          <li>
+            <span>01</span>
+            <div><h3>Select in the preview</h3><p>Quick Edit highlights the exact element you click.</p></div>
+          </li>
+          <li>
+            <span>02</span>
+            <div><h3>Describe the change</h3><p>The request includes the selected element and surface.</p></div>
+          </li>
+          <li>
+            <span>03</span>
+            <div><h3>Inspect the live draft</h3><p>The preview updates when the agent saves.</p></div>
+          </li>
+        </ol>
       </div>
     </div>
   );
 }
 
 function NightModeLoop() {
-  const cells = Array.from({ length: 20 }, (_, index) => index);
+  const cells = Array.from({ length: 9 }, (_, index) => index);
   const steps = ['Scan the grid', 'Spot the change', 'Pick it', 'Replay or rank'];
 
   return (
@@ -148,7 +143,7 @@ function NightModeLoop() {
           <p>Interaction diagram based on the published web game, not a process artifact.</p>
         </div>
         <div className="night-grid" aria-hidden="true">
-          {cells.map((cell) => <i className={cell === 13 ? 'changed' : ''} key={cell} />)}
+          {cells.map((cell) => <i className={cell === 5 ? 'changed' : ''} key={cell} />)}
           <span>Pick</span>
         </div>
         <ol className="night-loop-steps">
@@ -162,48 +157,22 @@ function NightModeLoop() {
 }
 
 function AdaBuilderVisual() {
-  const projectCards = [
-    ['Thread', 'Working'],
-    ['Thread', 'Preview'],
-    ['Thread', 'Available'],
-  ];
-
   return (
-    <div className="ada-visual">
-      <div className="ada-canvas" aria-hidden="true">
-        <div className="ada-canvas-meta"><span>Canvas overview</span><span>Semantic zoom</span></div>
-        <div className="ada-project-cluster ada-project-primary">
-          <div className="ada-project-name"><i />Project folder</div>
-          <div className="ada-thread-row">
-            {projectCards.map(([name, state], index) => (
-              <div className={index === 0 ? 'ada-thread active' : 'ada-thread'} key={`${name}-${state}`}>
-                <span>{name}</span><b>{state}</b><i />
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="ada-project-cluster ada-project-secondary"><span>Project folder</span><i /><i /></div>
-        <div className="ada-project-cluster ada-project-tertiary"><span>Project folder</span><i /><i /><i /></div>
-        <div className="ada-canvas-controls"><span>Search</span><span>Fit all</span><span>List</span></div>
-      </div>
-
-      <div className="ada-guide">
-        <div className="ada-guide-bar"><span>Project Guide</span><span>Read-only scan</span></div>
-        <div className="ada-guide-copy">
-          <span className="context-label">Repository evidence</span>
-          <h3>Show what the guide found before it runs anything.</h3>
-        </div>
-        <div className="ada-guide-signals">
-          <div><span>Tooling</span><b>Evidence + confidence</b></div>
-          <div><span>Start and checks</span><b>Evidence + confidence</b></div>
-          <div><span>Ports and environment</span><b>Evidence + confidence</b></div>
-          <div><span>Deployment signals</span><b>Evidence + confidence</b></div>
-        </div>
-        <div className="ada-guide-consent">
-          <span>Preview command</span>
-          <strong>Exact consent required</strong>
-        </div>
-      </div>
+    <div className="ada-visual" aria-label="Ada Builder branch captures">
+      <figure className="ada-shot ada-shot-primary">
+        <img
+          src={adaBuilderCanvas}
+          alt="Ada Builder canvas showing a local workspace, lifecycle lenses and one available version"
+        />
+        <figcaption><span>Canvas and lifecycle lenses</span><small>Real branch UI · isolated local worktree</small></figcaption>
+      </figure>
+      <figure className="ada-shot ada-shot-secondary">
+        <img
+          src={adaBuilderProjectGuide}
+          alt="Ada Builder Project Guide showing repository evidence, commands and tooling"
+        />
+        <figcaption><span>Project Guide</span><small>Read-only analysis · isolated local worktree</small></figcaption>
+      </figure>
     </div>
   );
 }
@@ -221,7 +190,7 @@ function AudosCodeMap() {
       <div className="foundation-column">
         <span className="map-label">Inherited foundation</span>
         <div className="foundation-card">
-          <span className="foundation-mark">T3</span>
+          <img className="foundation-mark" src={t3CodeLogo} alt="" />
           <div>
             <h3>T3 Code</h3>
             <p>Open-source coding-workspace foundation</p>
@@ -343,9 +312,9 @@ function Body() {
               <h2 id="quick-edit-title">Target a UI element, request a change and inspect the draft.</h2>
             </div>
             <p className="case-summary">
-              Quick Edit carried selected-element context into a dedicated GLM 4.7 route on Cerebras
-              through OpenRouter, with the changing draft visible for inspection. It reached the Audos
-              Code 0.3.0 staging release path; feature adoption and outcomes were not measured.
+              Quick Edit carried selected-element context into a parallel GLM 4.7 inference path on
+              Cerebras through OpenRouter for small edits, with the changing draft visible for inspection.
+              It reached the Audos Code 0.3.0 staging release path; feature adoption and outcomes were not measured.
             </p>
           </div>
 
@@ -403,17 +372,6 @@ function Body() {
             </div>
           </aside>
 
-          <aside className="ai-disclosure">
-            <div>
-              <span className="context-label">AI-assisted delivery</span>
-              <h3>This case study focuses on the Audos-specific product experience. Coding agents supported implementation and testing.</h3>
-            </div>
-            <p>
-              I use coding agents extensively for React, TypeScript and Node changes. This case study
-              describes the work as AI-assisted product design and implementation. It does not present
-              the engineering as hand-written or claim ownership of T3 Code.
-            </p>
-          </aside>
         </section>
 
         <section className="case-study ada-builder-case" id="ada-builder" aria-labelledby="ada-builder-title">
@@ -425,16 +383,17 @@ function Body() {
             </div>
             <p className="case-summary">
               Ada Builder is a separate local prototype. It keeps T3 Code's project, thread, worktree
-              and preview models, then presents them as a spatial canvas with a repository-aware Project Guide.
+              and preview models, then arranges versions on a spatial canvas with lifecycle lenses and
+              a repository-aware Project Guide.
             </p>
           </div>
 
           <aside className="prototype-note">
             <span>Foundation and scope</span>
             <p>
-              The prototype is a fork of T3 Code, not a from-scratch product. Its current canvas is a
-              read-only presentation over T3's existing data model. Unsupported lifecycle actions are
-              absent rather than simulated.
+              The prototype is a fork of T3 Code, not a from-scratch product. The captures below show
+              actual Ada Builder branch UI running against an isolated local worktree. They contain no
+              customer workspace content.
             </p>
           </aside>
 
@@ -452,7 +411,7 @@ function Body() {
               <div><dt>Role</dt><dd>Product design and AI-assisted implementation</dd></div>
               <div><dt>Foundation</dt><dd>T3 Code fork</dd></div>
               <div><dt>State</dt><dd>Local working prototype</dd></div>
-              <div><dt>Use</dt><dd>No user or deployment claim</dd></div>
+              <div><dt>Capture</dt><dd>Isolated local worktree</dd></div>
             </dl>
           </div>
 
@@ -460,21 +419,21 @@ function Body() {
             <article><span>01</span><h3>Spatial, not separate</h3><p>The canvas adapts existing T3 read models and keeps the standard view within reach.</p></article>
             <article><span>02</span><h3>Density follows zoom</h3><p>Overview, near and focus states reveal more detail without changing the underlying project.</p></article>
             <article><span>03</span><h3>Unknown stays unknown</h3><p>Missing repository, branch, worktree or preview metadata remains visibly unavailable.</p></article>
-            <article><span>04</span><h3>Consent before execution</h3><p>The Project Guide analyzes a bounded file set first, then asks before starting a preview.</p></article>
+            <article><span>04</span><h3>Consent before execution</h3><p>The Project Guide shows the exact command, folder, port and risks before asking to run a preview.</p></article>
           </div>
 
           <aside className="ada-verification">
             <div>
               <span className="context-label">Local verification</span>
-              <strong>58 focused tests passed</strong>
-              <p>Canvas layout, data adaptation, evidence collection, profile verification and Project Guide behavior.</p>
+              <strong>Branch UI rendered</strong>
+              <p>The canvas and Project Guide were checked locally from the separate Ada Builder fork.</p>
             </div>
             <div>
               <span className="context-label">Evidence boundary</span>
               <p>
-                The current branch supports a working prototype claim. It does not support users,
-                deployment, adoption, time saved or other outcome metrics. Quick Edit and Cerebras
-                belong to Audos Code, not this case.
+                The captures show real React UI over an isolated local worktree. They support a working
+                prototype claim, not users, deployment, adoption, time saved or other outcome metrics.
+                Quick Edit and Cerebras belong to Audos Code, not this case.
               </p>
             </div>
           </aside>
@@ -587,7 +546,8 @@ function Body() {
             <p>
               My background includes product design, game UX, accessible component systems and behavioral
               analysis. I stay close to implementation because system state, edge cases and recovery are
-              part of the design.
+              part of the design. I use coding agents extensively for React, TypeScript and Node changes.
+              Audos Code and Ada Builder credit T3 Code as their foundation.
             </p>
             <div className="timeline" aria-label="Experience timeline">
               <div><time>2025 to present</time><span><strong>Audos</strong>Product Designer</span></div>
